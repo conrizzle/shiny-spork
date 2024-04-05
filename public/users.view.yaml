@@ -2,7 +2,6 @@
 schema: public
 
 dimensions:
-  first_name: {}
   last_name: {}
   email: {}
   age: {}
@@ -15,6 +14,9 @@ dimensions:
   gender: {}
   created_at: {}
   traffic_source: {}
+
+  first_name:
+    label: demos are cool
 
   id:
     format: ID
