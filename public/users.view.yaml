@@ -3,8 +3,6 @@
 schema: public
 
 dimensions:
-  first_name: {}
-  last_name: {}
   email: {}
   age: {}
   city: {}
@@ -15,6 +13,12 @@ dimensions:
   longitude: {}
   gender: {}
   created_at: {}
+
+  last_name:
+    label: Labeled Last
+
+  first_name:
+    label: Labeled First
 
   traffic_source:
     label: shared traffic source
