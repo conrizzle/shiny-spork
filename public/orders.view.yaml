@@ -10,7 +10,6 @@ dimensions:
     primary_key: true
 
   user_id:
-    label: User Id
     format: ID
 
   seller_id:

@@ -1,8 +1,9 @@
 # Reference this view as users
-# such branch some more and more and even more whoof more yikesdddd
 schema: public
 
 dimensions:
+  first_name: {}
+  last_name: {}
   email: {}
   age: {}
   city: {}
@@ -13,23 +14,7 @@ dimensions:
   longitude: {}
   gender: {}
   created_at: {}
-
-  last_name:
-    label: Labeled Last
-
-  first_name:
-    label: Labeled First
-
-  traffic_source:
-    label: shared traffic source
-    view_label: Orders
-
-  traffic_source2:
-    sql: traffic_source
-    view_label: Orders
-
-  traffic_source3:
-    sql: traffic_source
+  traffic_source: {}
 
   id:
     format: ID
