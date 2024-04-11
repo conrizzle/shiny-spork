@@ -11,7 +11,6 @@ dimensions:
     primary_key: true
 
   product_id:
-    label: Prod Id
     format: ID
 
 measures:
