@@ -15,7 +15,7 @@ dimensions:
   traffic_source: {}
 
   last_name:
-    label: ya see
+    label: nate
 
   first_name:
     label: demos are cool
