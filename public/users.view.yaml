@@ -23,6 +23,7 @@ dimensions:
     label: demos are cool
 
   id:
+    label: id
     format: ID
     primary_key: true
 
