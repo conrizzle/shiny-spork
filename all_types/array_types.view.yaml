@@ -3,13 +3,15 @@ schema: all_types
 table_name: array_types
 
 dimensions:
-  some_int_array: {}
   some_text_array: {}
   some_boolean_array: {}
   some_date_array: {}
   some_json_array: {}
   some_2d_int_array: {}
   some_2d_text_array: {}
+
+  some_int_array:
+    label: test
 
   id:
     format: ID
