@@ -11,7 +11,7 @@ dimensions:
   some_2d_text_array: {}
 
   some_int_array:
-    label: test
+    label: testit
 
   id:
     format: ID
