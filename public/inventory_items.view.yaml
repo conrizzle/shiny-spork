@@ -6,7 +6,7 @@ dimensions:
   cost: {}
 
   sold_at:
-    label: demo
+    label: demo are really cool
 
   id:
     format: ID
