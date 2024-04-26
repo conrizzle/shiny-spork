@@ -1,0 +1,18 @@
+# Reference this view as all_types__nullable_numeric_types
+schema: all_types
+table_name: nullable_numeric_types
+
+dimensions:
+  bigint: {}
+  doubleprecision: {}
+  integer: {}
+  money: {}
+  numeric_12_10: {}
+  numeric_unspecified: {}
+  numeric_10: {}
+  real: {}
+  smallint: {}
+
+measures:
+  count:
+    aggregate_type: count
