@@ -14,13 +14,13 @@ dimensions:
   traffic_source: {}
 
   email:
-    label: merge first
+    label: merge firstly
 
   last_name:
-    label: ya see new
+    label: teste
 
   first_name:
-    label: demos are cool
+    label: updates
 
   id:
     label: id
