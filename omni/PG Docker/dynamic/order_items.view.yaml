@@ -1,0 +1,20 @@
+# Reference this view as dynamic__order_items
+schema: dynamic
+table_name: order_items
+
+dimensions:
+  quantity: {}
+
+  id:
+    format: ID
+    primary_key: true
+
+  order_id:
+    format: ID
+
+  inventory_item_id:
+    format: ID
+
+measures:
+  count:
+    aggregate_type: count

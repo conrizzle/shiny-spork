@@ -1,0 +1,4 @@
+dynamic_schemas:
+  dynamic:
+    from_schema: public
+    user_attribute: dynamic_public
