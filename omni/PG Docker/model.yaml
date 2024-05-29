@@ -1,4 +1,5 @@
 dynamic_schemas:
   dynamic:
+    # bruhh
     from_schema: public
     user_attribute: dynamic_public
