@@ -1,5 +1,7 @@
 ignored_schemas: [ all_types ]
 
+# test pr
+
 access_grants:
   default:
     user_attribute: foo_attr
