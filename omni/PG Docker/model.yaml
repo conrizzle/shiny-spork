@@ -1,5 +1,35 @@
-dynamic_schemas:
-  dynamic:
-    # bruhh
-    from_schema: public
-    user_attribute: dynamic_public
+ignored_schemas: [ all_types ]
+
+access_grants:
+  default:
+    user_attribute: foo_attr
+    allowed_values: [ allowed ]
+  other_one:
+    user_attribute: foo_attr
+    allowed_values: [ allowed ]
+
+default_topic_required_access_grants: [ default ]
+
+default_topic_access_filters:
+  - field: users.age
+    user_attribute: users_age_filter
+
+topics:
+  users:
+    joins: {}
+
+  no_grant_required:
+    base_view: users
+
+    joins: {}
+
+    required_access_grants: []
+
+  no_restrictions:
+    base_view: users
+
+    joins: {}
+
+    access_filters: []
+
+    required_access_grants: []
