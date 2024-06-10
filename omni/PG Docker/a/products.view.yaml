@@ -1,0 +1,22 @@
+# Reference this view as a__products
+schema: a
+table_name: products
+
+dimensions:
+  category: {}
+  name: {}
+  brand: {}
+  retail_price: {}
+  department: {}
+  sku: {}
+
+  id:
+    format: ID
+    primary_key: true
+
+  distribution_center_id:
+    format: ID
+
+measures:
+  count:
+    aggregate_type: count

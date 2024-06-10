@@ -1,3 +1,14 @@
+dynamic_schemas:
+  a:
+    from_schema: public
+    user_attribute: foo
+  b:
+    from_schema: public
+    user_attribute: foo
+  c:
+    from_schema: public
+    user_attribute: foo
+
 ignored_schemas: [ all_types ]
 
 access_grants:

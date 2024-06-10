@@ -1,0 +1,19 @@
+# Reference this view as c__inventory_items
+schema: c
+table_name: inventory_items
+
+dimensions:
+  created_at: {}
+  sold_at: {}
+  cost: {}
+
+  id:
+    format: ID
+    primary_key: true
+
+  product_id:
+    format: ID
+
+measures:
+  count:
+    aggregate_type: count
