@@ -1,7 +1,8 @@
-# Reference this view as users not cool man
+# Reference this view as users
 schema: public
 
 dimensions:
+  first_name: {}
   last_name: {}
   email: {}
   age: {}
@@ -14,9 +15,6 @@ dimensions:
   gender: {}
   created_at: {}
   traffic_source: {}
-
-  first_name:
-    label: Firstyerrrhumbumble
 
   id:
     format: ID
