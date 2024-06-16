@@ -1,7 +1,5 @@
 ignored_schemas: [ all_types ]
 
-# test pr
-
 access_grants:
   default:
     user_attribute: foo_attr
@@ -9,8 +7,6 @@ access_grants:
   other_one:
     user_attribute: foo_attr
     allowed_values: [ allowed ]
-
-default_topic_required_access_grants: [ default ]
 
 default_topic_access_filters:
   - field: users.age
