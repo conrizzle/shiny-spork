@@ -6,7 +6,7 @@ dimensions:
   sold_at: {}
 
   cost:
-    label: Cost
+    label: Cost boom
 
   id:
     format: ID
