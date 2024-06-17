@@ -1,7 +1,6 @@
 ignored_schemas: [ all_types ]
 
 access_grants:
-  # one on sync sank sunk
   default:
     user_attribute: foo_attr
     allowed_values: [ allowed ]
@@ -10,7 +9,6 @@ access_grants:
     allowed_values: [ allowed ]
 
 default_topic_access_filters:
-  # drr de drr
   - field: users.age
     user_attribute: users_age_filter
 
