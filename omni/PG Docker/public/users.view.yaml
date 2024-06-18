@@ -16,7 +16,7 @@ dimensions:
   traffic_source: {}
 
   first_name:
-    label: First For Real
+    label: First For Real Some more
 
   id:
     format: ID
