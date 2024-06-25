@@ -28,7 +28,7 @@ topics:
   no_restrictions:
     base_view: users
 
-    joins: {}
+    joins: { bork }
 
     access_filters: []
 
