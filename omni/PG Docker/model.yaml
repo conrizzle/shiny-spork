@@ -1,5 +1,5 @@
 ignored_schemas: [ all_types ]
-
+bbbbbb
 access_grants:
   # one on sync
   default:
