@@ -16,7 +16,7 @@ default_topic_access_filters:
 
 topics:
   users:
-    joins: { again }
+    joins: {}
 
   no_grant_required:
     base_view: users
