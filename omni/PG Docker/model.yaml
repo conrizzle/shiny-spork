@@ -23,7 +23,7 @@ topics:
 
     joins: {}
 
-    required_access_grants: []
+    required_access_grants: [ default ]
 
   no_restrictions:
     base_view: users
