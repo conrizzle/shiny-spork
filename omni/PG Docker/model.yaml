@@ -21,7 +21,7 @@ topics:
   no_grant_required:
     base_view: users
 
-    joins: {}
+    joins: { boom }
 
     required_access_grants: []
 
