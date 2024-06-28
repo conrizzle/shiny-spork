@@ -16,7 +16,7 @@ dimensions:
   traffic_source: {}
 
   first_name:
-    label: A Label Change
+    label: Cool label
 
   id:
     format: ID
