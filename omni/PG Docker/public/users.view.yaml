@@ -16,7 +16,7 @@ dimensions:
   traffic_source: {}
 
   first_name:
-    label: A Label blow away
+    label: A Label
 
   id:
     format: ID
