@@ -13,7 +13,7 @@ default_topic_access_filters:
     user_attribute: users_age_filter
 
 topics:
-  # this is a comment retain this blow this away wild
+  # this is a comment retain this blow this away wild bahhh
   users:
     joins: {}
 
