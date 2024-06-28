@@ -1,7 +1,6 @@
 ignored_schemas: [ all_types ]
 
 access_grants:
-  # this is a comment we'll retain this edit
   default:
     user_attribute: foo_attr
     allowed_values: [ allowed ]
