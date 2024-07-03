@@ -1,5 +1,6 @@
 topics:
   users_in_topic:
+    #bahh
     base_view: users
 
     joins:
