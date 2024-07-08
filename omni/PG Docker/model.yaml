@@ -1,3 +1,5 @@
+included_views: [ users ]
+
 topics:
   users_in_topic:
     base_view: users
