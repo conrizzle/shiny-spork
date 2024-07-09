@@ -1,6 +1,5 @@
-included_views: [ users ]
-
 topics:
+  # keep
   users_in_topic:
     base_view: users
 
