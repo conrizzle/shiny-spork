@@ -16,7 +16,7 @@ dimensions:
   traffic_source: {}
 
   first_name:
-    label: onesie
+    label: twosie
 
   id:
     format: ID
