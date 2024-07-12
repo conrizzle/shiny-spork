@@ -15,7 +15,8 @@ dimensions:
   traffic_source: {}
 
   last_name:
-    label: more unsie
+    sql: last_name
+    label: more more unsie
 
   first_name:
     label: unsie what
