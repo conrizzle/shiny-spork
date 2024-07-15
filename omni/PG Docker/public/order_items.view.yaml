@@ -3,7 +3,7 @@ schema: public
 
 dimensions:
   quantity:
-    label: more unrelated
+    label: more unrelated stuff
 
   id:
     format: ID
