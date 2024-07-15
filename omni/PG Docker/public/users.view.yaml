@@ -15,10 +15,11 @@ dimensions:
   traffic_source: {}
 
   last_name:
-    label: nexty
+    sql: last_name
+    label: more more unsie
 
   first_name:
-    label: whatsa
+    label: unsie what
 
   id:
     format: ID
