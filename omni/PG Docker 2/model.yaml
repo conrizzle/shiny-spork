@@ -1,0 +1,9 @@
+access_grants:
+  view_test:
+    user_attribute: foo_attr
+    allowed_values: [ allowed ]
+
+topics:
+  users:
+    joins:
+      orders: {}
