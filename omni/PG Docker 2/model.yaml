@@ -7,3 +7,9 @@ topics:
   users:
     joins:
       orders: {}
+
+    views:
+      users:
+        dimensions:
+          age:
+            label: Age Labeled In Topic
