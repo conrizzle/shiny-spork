@@ -4,6 +4,7 @@ access_grants:
     allowed_values: [ allowed ]
 
 topics:
+  # normit
   users:
     joins:
       orders: {}
