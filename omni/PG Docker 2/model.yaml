@@ -4,6 +4,7 @@ access_grants:
     allowed_values: [ allowed ]
 
 topics:
+  # just a comment and more
   users:
     joins:
       orders: {}
