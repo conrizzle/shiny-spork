@@ -1,7 +1,7 @@
 ignored_schemas: [ all_types ]
 
 access_grants:
-  # one on sync
+  # one on sync okokok
   default:
     user_attribute: foo_attr
     allowed_values: [ allowed ]
@@ -23,7 +23,7 @@ topics:
 
     joins: {}
 
-    required_access_grants: []
+    required_access_grants: [ default ]
 
   no_restrictions:
     base_view: users
