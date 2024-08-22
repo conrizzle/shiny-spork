@@ -1,2 +1,0 @@
-# Reference this view as extends_users
-extends: [ users ]
