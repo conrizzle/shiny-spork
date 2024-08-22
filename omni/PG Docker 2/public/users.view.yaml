@@ -1,7 +1,7 @@
 # Reference this view as users
 schema: public
 
-# comment more
+# comment more more
 
 dimensions:
   first_name: {}

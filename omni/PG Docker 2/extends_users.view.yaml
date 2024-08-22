@@ -1,3 +1,2 @@
 # Reference this view as extends_users
-schema: public
 extends: [ users ]
