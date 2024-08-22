@@ -1,3 +1,6 @@
 [submodule "subby"]
 	path = subby
 	url = https://github.com/conrizzle/shiny-sub.git
+[submodule "suba"]
+	path = suba
+	url = https://github.com/conrizzle/shiny-sub.git
