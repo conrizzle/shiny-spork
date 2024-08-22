@@ -1,6 +1,6 @@
 access_grants:
   view_test:
-    # subby 5
+    # subby 6
     user_attribute: foo_attr
     allowed_values: [ allowed ]
 
