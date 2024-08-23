@@ -1,4 +1,6 @@
 # Reference this view as inventory_items
+schema: public
+
 dimensions:
   created_at: {}
   sold_at: {}
