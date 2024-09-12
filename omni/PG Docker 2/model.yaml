@@ -1,5 +1,4 @@
 topics:
-  # something cool to later revert
   users:
     # another cool thing we won't revert right away
     joins: {}
