@@ -1,17 +1,3 @@
-access_grants:
-  view_test:
-    # subby 6
-    user_attribute: foo_attr
-    allowed_values: [ allowed ]
-
 topics:
-  # newww
   users:
-    joins:
-      orders: {}
-
-    views:
-      users:
-        dimensions:
-          age:
-            label: Age Labeled In Topic
+    joins: {}
