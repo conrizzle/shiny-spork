@@ -1,4 +1,3 @@
 topics:
   users:
-    # another cool thing we won't revert right away
     joins: {}
