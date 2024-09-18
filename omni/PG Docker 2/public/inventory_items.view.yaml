@@ -4,9 +4,7 @@ schema: public
 dimensions:
   created_at: {}
   sold_at: {}
-
-  cost:
-    label: costly
+  cost: {}
 
   id:
     format: ID
