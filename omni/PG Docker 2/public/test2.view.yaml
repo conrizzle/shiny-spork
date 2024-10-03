@@ -1,0 +1,9 @@
+# Reference this view as test2
+schema: public
+
+dimensions:
+  one: {}
+
+measures:
+  count:
+    aggregate_type: count
