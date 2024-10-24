@@ -2,7 +2,6 @@
 schema: public
 
 dimensions:
-  age: {}
   city: {}
   state: {}
   country: {}
@@ -13,8 +12,11 @@ dimensions:
   created_at: {}
   traffic_source: {}
 
+  age:
+    label: sparse age
+
   email:
-    label: email label
+    label: email sparse
 
   last_name:
     label: nexty
