@@ -1,0 +1,15 @@
+# Reference this view as all_types__date_types
+schema: all_types
+table_name: date_types
+
+dimensions:
+  some_ts: {}
+  some_ts_tz: {}
+  some_date: {}
+  some_time: {}
+  some_time_tz: {}
+  some_interval: {}
+
+measures:
+  count:
+    aggregate_type: count
