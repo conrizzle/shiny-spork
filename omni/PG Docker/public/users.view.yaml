@@ -16,7 +16,7 @@ dimensions:
     label: sparse age
 
   email:
-    label: email label
+    label: email sparse
 
   last_name:
     label: nexty
