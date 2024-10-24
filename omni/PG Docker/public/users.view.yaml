@@ -14,7 +14,7 @@ dimensions:
   traffic_source: {}
 
   email:
-    label: email labels
+    label: email label
 
   last_name:
     label: nexty
