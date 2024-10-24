@@ -2,7 +2,6 @@
 schema: public
 
 dimensions:
-  age: {}
   city: {}
   state: {}
   country: {}
@@ -12,6 +11,9 @@ dimensions:
   gender: {}
   created_at: {}
   traffic_source: {}
+
+  age:
+    label: sparse age
 
   email:
     label: email label
