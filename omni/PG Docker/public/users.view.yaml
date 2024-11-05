@@ -45,3 +45,7 @@ measures:
   age_median:
     sql: ${users.age}
     aggregate_type: median
+
+  age_list:
+    sql: ${users.age}
+    aggregate_type: list
