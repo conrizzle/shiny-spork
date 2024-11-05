@@ -58,3 +58,7 @@ measures:
   gender_count_distinct:
     sql: ${users.gender}
     aggregate_type: count_distinct
+
+  state_list:
+    sql: ${users.state}
+    aggregate_type: list
