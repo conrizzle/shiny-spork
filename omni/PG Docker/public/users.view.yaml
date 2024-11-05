@@ -41,3 +41,7 @@ measures:
   age_max:
     sql: ${users.age}
     aggregate_type: max
+
+  age_median:
+    sql: ${users.age}
+    aggregate_type: median
