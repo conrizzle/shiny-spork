@@ -49,3 +49,8 @@ measures:
   age_list:
     sql: ${users.age}
     aggregate_type: list
+
+  age_min_copy:
+    sql: ${users.age}
+    label: Age Min Copy
+    aggregate_type: min
