@@ -54,3 +54,7 @@ measures:
     sql: ${users.age}
     label: Age Min Copy
     aggregate_type: min
+
+  gender_count_distinct:
+    sql: ${users.gender}
+    aggregate_type: count_distinct
