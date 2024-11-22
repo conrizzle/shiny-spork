@@ -2,8 +2,6 @@
 schema: public
 
 dimensions:
-  not_in_omni: {}
-  first_name: {}
   last_name: {}
   email: {}
   age: {}
@@ -17,6 +15,9 @@ dimensions:
   created_at: {}
   traffic_source: {}
   test3: {}
+
+  first_name:
+    label: fooble
 
   id:
     format: ID
