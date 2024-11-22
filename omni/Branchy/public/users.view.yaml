@@ -8,7 +8,15 @@ dimensions:
   age: {}
   city: {}
   state: {}
-
+  country: {}
+  zip: {}
+  latitude: {}
+  longitude: {}
+  gender: {}
+  created_at: {}
+  traffic_source: {}
+  test3: {}
+  test4: {}
 
   id:
     format: ID
