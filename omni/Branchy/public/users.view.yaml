@@ -2,6 +2,7 @@
 schema: public
 
 dimensions:
+  not_in_omni: {}
   first_name: {}
   last_name: {}
   email: {}
