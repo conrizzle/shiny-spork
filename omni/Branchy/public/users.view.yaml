@@ -2,13 +2,23 @@
 schema: public
 
 dimensions:
-  first_name: {}
   last_name: {}
   email: {}
   age: {}
   city: {}
   state: {}
+  country: {}
+  zip: {}
+  latitude: {}
+  longitude: {}
+  gender: {}
+  created_at: {}
+  traffic_source: {}
+  test3: {}
+  test4: {}
 
+  first_name:
+    label: fobble
 
   id:
     format: ID
