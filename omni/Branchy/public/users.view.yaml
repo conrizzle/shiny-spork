@@ -17,6 +17,8 @@ dimensions:
   traffic_source: {}
   test3: {}
   test4: {}
+  test5: {}
+  test6: {}
 
   id:
     format: ID
