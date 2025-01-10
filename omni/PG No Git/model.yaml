@@ -1,0 +1,6 @@
+auto_run: false
+
+dynamic_schemas:
+  under_under:
+    from_schema: test_clone
+    user_attribute: dynamic_public

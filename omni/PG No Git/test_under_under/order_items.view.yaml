@@ -1,0 +1,20 @@
+# Reference this view as test_under_under__order_items
+schema: test_under_under
+table_name: order_items
+
+dimensions:
+  quantity: {}
+
+  id:
+    format: ID
+    primary_key: true
+
+  order_id:
+    format: ID
+
+  inventory_item_id:
+    format: ID
+
+measures:
+  count:
+    aggregate_type: count

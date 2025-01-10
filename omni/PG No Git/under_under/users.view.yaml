@@ -1,0 +1,28 @@
+# Reference this view as under_under__users
+schema_label: ""
+
+schema: under_under
+table_name: users
+
+dimensions:
+  first_name: {}
+  last_name: {}
+  email: {}
+  age: {}
+  city: {}
+  state: {}
+  country: {}
+  zip: {}
+  latitude: {}
+  longitude: {}
+  gender: {}
+  created_at: {}
+  traffic_source: {}
+
+  id:
+    format: ID
+    primary_key: true
+
+measures:
+  count:
+    aggregate_type: count

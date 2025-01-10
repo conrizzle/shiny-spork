@@ -1,0 +1,20 @@
+# Reference this view as under_under__timezones
+schema_label: ""
+
+schema: under_under
+table_name: timezones
+
+dimensions:
+  a_timestamp: {}
+  a_timestamptz: {}
+  string_value: {}
+  timestamp_without_timezone: {}
+  timestamp_with_timezone: {}
+
+  id:
+    format: ID
+    primary_key: true
+
+measures:
+  count:
+    aggregate_type: count

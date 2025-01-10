@@ -1,0 +1,19 @@
+# Reference this view as test_clone__inventory_items
+schema: test_clone
+table_name: inventory_items
+
+dimensions:
+  created_at: {}
+  sold_at: {}
+  cost: {}
+
+  id:
+    format: ID
+    primary_key: true
+
+  product_id:
+    format: ID
+
+measures:
+  count:
+    aggregate_type: count

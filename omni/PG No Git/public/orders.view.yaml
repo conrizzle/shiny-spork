@@ -1,0 +1,21 @@
+# Reference this view as orders
+schema: public
+
+dimensions:
+  status: {}
+  created_at: {}
+
+  id:
+    format: ID
+    primary_key: true
+
+  user_id:
+    tags: [ drills ]
+    format: ID
+
+  seller_id:
+    format: ID
+
+measures:
+  count:
+    aggregate_type: count

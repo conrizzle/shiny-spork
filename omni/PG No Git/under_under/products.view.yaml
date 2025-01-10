@@ -1,0 +1,24 @@
+# Reference this view as under_under__products
+schema_label: ""
+
+schema: under_under
+table_name: products
+
+dimensions:
+  category: {}
+  name: {}
+  brand: {}
+  retail_price: {}
+  department: {}
+  sku: {}
+
+  id:
+    format: ID
+    primary_key: true
+
+  distribution_center_id:
+    format: ID
+
+measures:
+  count:
+    aggregate_type: count

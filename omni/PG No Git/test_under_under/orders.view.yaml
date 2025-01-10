@@ -1,0 +1,21 @@
+# Reference this view as test_under_under__orders
+schema: test_under_under
+table_name: orders
+
+dimensions:
+  status: {}
+  created_at: {}
+
+  id:
+    format: ID
+    primary_key: true
+
+  user_id:
+    format: ID
+
+  seller_id:
+    format: ID
+
+measures:
+  count:
+    aggregate_type: count

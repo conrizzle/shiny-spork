@@ -1,0 +1,30 @@
+# Reference this view as users
+schema: public
+
+dimensions:
+  email: {}
+  age: {}
+  city: {}
+  state: {}
+  country: {}
+  zip: {}
+  latitude: {}
+  longitude: {}
+  gender: {}
+  created_at: {}
+  traffic_source: {}
+
+  first_name:
+    tags: [ drills ]
+
+  last_name:
+    tags: [ drills ]
+
+  id:
+    format: ID
+    primary_key: true
+
+measures:
+  count:
+    drill_fields: [ tag:drills, count ]
+    aggregate_type: count
