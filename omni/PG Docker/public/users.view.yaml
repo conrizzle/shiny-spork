@@ -14,7 +14,6 @@ dimensions:
   traffic_source: {}
 
   email:
-    sql: borked
     label: email labe
 
   last_name:
