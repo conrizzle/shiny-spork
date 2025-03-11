@@ -1,1 +1,1 @@
-{}
+ignored_views: [ DB*, BUCK_DEMO_SCENARIO_3_DEV.D*, buck_demo_scenario_3.a_m* ]
