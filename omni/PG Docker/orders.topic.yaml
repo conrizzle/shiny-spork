@@ -1,6 +1,7 @@
 joins:
   users: {}
-  order_items: {}
+  order_items:
+    products: {}
 
 views:
   orders:
