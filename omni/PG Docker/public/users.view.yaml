@@ -12,9 +12,7 @@ dimensions:
   gender: {}
   created_at: {}
   traffic_source: {}
-
-  email:
-    label: email block
+  email: {}
 
   last_name:
     label: nexty
