@@ -1,7 +1,6 @@
 # Reference this view as inv_renamed
 schema: public
 table_name: inventory_items
-renamed_from: inventory_items
 
 dimensions:
   sold_at: {}
