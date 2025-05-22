@@ -1,6 +1,6 @@
 # Reference this view as all_types__array_types
 
-# any change will do
+# any
 schema: all_types
 table_name: array_types
 
