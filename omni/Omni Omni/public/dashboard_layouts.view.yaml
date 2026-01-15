@@ -1,0 +1,33 @@
+# Reference this view as dashboard_layouts
+schema: public
+
+dimensions:
+  created_at: {}
+  updated_at: {}
+  metadata: {}
+  metadata_version: {}
+  refresh_interval: {}
+  facet_filters: {}
+
+  id:
+    format: ID
+    primary_key: true
+
+  query_presentation_collection_id:
+    format: ID
+
+  creator_id:
+    format: ID
+
+  updater_id:
+    format: ID
+
+  organization_id:
+    format: ID
+
+  workbook_id:
+    format: ID
+
+measures:
+  count:
+    aggregate_type: count

@@ -1,0 +1,32 @@
+# Reference this view as document_drafts
+schema: public
+
+dimensions:
+  document_identifier: {}
+  created_at: {}
+  deleted_at: {}
+  description: {}
+
+  id:
+    format: ID
+    primary_key: true
+
+  organization_id:
+    format: ID
+
+  created_by_id:
+    format: ID
+
+  deleted_by_id:
+    format: ID
+
+  draft_id:
+    sql: '"draftId"'
+    format: ID
+
+  branch_id:
+    format: ID
+
+measures:
+  count:
+    aggregate_type: count

@@ -1,0 +1,34 @@
+# Reference this view as scheduled_task_destinations
+schema: public
+
+dimensions:
+  created_at: {}
+  updated_at: {}
+  deleted_at: {}
+  format: {}
+  last_began_at: {}
+  last_completed_at: {}
+  last_status: {}
+  metadata: {}
+  last_results_hash: {}
+  last_triggered_at: {}
+
+  id:
+    format: ID
+    primary_key: true
+
+  scheduled_task_id:
+    format: ID
+
+  last_completed_job_history_id:
+    format: ID
+
+  last_started_job_id:
+    format: ID
+
+  credentials_id:
+    format: ID
+
+measures:
+  count:
+    aggregate_type: count

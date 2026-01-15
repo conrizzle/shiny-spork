@@ -1,0 +1,21 @@
+# Reference this view as invitations
+schema: public
+
+dimensions:
+  email: {}
+  invited_by: {}
+  created_at: {}
+  accepted_at: {}
+  declined_at: {}
+  revoked_at: {}
+
+  id:
+    format: ID
+    primary_key: true
+
+  organization_id:
+    format: ID
+
+measures:
+  count:
+    aggregate_type: count

@@ -1,0 +1,24 @@
+# Reference this view as scheduled_job_downloads
+schema: public
+
+dimensions:
+  created_at: {}
+  updated_at: {}
+  output_file_name: {}
+
+  id:
+    format: ID
+    primary_key: true
+
+  organization_id:
+    format: ID
+
+  user_id:
+    format: ID
+
+  scheduled_job_id:
+    format: ID
+
+measures:
+  count:
+    aggregate_type: count

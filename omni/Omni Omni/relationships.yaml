@@ -1,0 +1,896 @@
+- join_from_view: query_history
+  join_to_view: memberships
+  join_type: always_left
+  on_sql: ${query_history.membership_id} = ${memberships.id}
+  relationship_type: assumed_many_to_one
+
+- join_from_view: user_groups_history
+  join_to_view: user_groups
+  join_type: always_left
+  on_sql: ${user_groups_history.user_group_id} = ${user_groups.id}
+  relationship_type: assumed_many_to_one
+
+- join_from_view: user_groups_history
+  join_to_view: organizations
+  join_type: always_left
+  on_sql: ${user_groups_history.organization_id} = ${organizations.id}
+  relationship_type: assumed_many_to_one
+
+- join_from_view: folder_favorites
+  join_to_view: organizations
+  join_type: always_left
+  on_sql: ${folder_favorites.organization_id} = ${organizations.id}
+  relationship_type: assumed_many_to_one
+
+- join_from_view: folder_favorites
+  join_to_view: users
+  join_type: always_left
+  on_sql: ${folder_favorites.user_id} = ${users.id}
+  relationship_type: assumed_many_to_one
+
+- join_from_view: folder_favorites
+  join_to_view: folders
+  join_type: always_left
+  on_sql: ${folder_favorites.folder_id} = ${folders.id}
+  relationship_type: assumed_many_to_one
+
+- join_from_view: membership_history
+  join_to_view: memberships
+  join_type: always_left
+  on_sql: ${membership_history.membership_id} = ${memberships.id}
+  relationship_type: assumed_many_to_one
+
+- join_from_view: membership_history
+  join_to_view: organizations
+  join_type: always_left
+  on_sql: ${membership_history.organization_id} = ${organizations.id}
+  relationship_type: assumed_many_to_one
+
+- join_from_view: membership_history
+  join_to_view: users
+  join_type: always_left
+  on_sql: ${membership_history.user_id} = ${users.id}
+  relationship_type: assumed_many_to_one
+
+- join_from_view: folders
+  join_to_view: organizations
+  join_type: always_left
+  on_sql: ${folders.organization_id} = ${organizations.id}
+  relationship_type: assumed_many_to_one
+
+- join_from_view: user_group_connection_roles
+  join_to_view: organizations
+  join_type: always_left
+  on_sql: ${user_group_connection_roles.organization_id} = ${organizations.id}
+  relationship_type: assumed_many_to_one
+
+- join_from_view: user_group_connection_roles
+  join_to_view: user_groups
+  join_type: always_left
+  on_sql: ${user_group_connection_roles.user_group_id} = ${user_groups.id}
+  relationship_type: assumed_many_to_one
+
+- join_from_view: user_group_connection_roles
+  join_to_view: connections
+  join_type: always_left
+  on_sql: ${user_group_connection_roles.connection_id} = ${connections.id}
+  relationship_type: assumed_many_to_one
+
+- join_from_view: permit_history_entries
+  join_to_view: organizations
+  join_type: always_left
+  on_sql: ${permit_history_entries.organization_id} = ${organizations.id}
+  relationship_type: assumed_many_to_one
+
+- join_from_view: permit_history_entries
+  join_to_view: workbooks
+  join_type: always_left
+  on_sql: ${permit_history_entries.workbook_id} = ${workbooks.id}
+  relationship_type: assumed_many_to_one
+
+- join_from_view: permit_history_entries
+  join_to_view: folders
+  join_type: always_left
+  on_sql: ${permit_history_entries.folder_id} = ${folders.id}
+  relationship_type: assumed_many_to_one
+
+- join_from_view: permit_history_entries
+  join_to_view: users
+  join_type: always_left
+  on_sql: ${permit_history_entries.user_id} = ${users.id}
+  relationship_type: assumed_many_to_one
+
+- join_from_view: permit_history_entries
+  join_to_view: user_groups
+  join_type: always_left
+  on_sql: ${permit_history_entries.user_group_id} = ${user_groups.id}
+  relationship_type: assumed_many_to_one
+
+- join_from_view: permit_history_entries
+  join_to_view: document_user_permits
+  join_type: always_left
+  on_sql: ${permit_history_entries.document_user_permit_id} =
+    ${document_user_permits.id}
+  relationship_type: assumed_many_to_one
+
+- join_from_view: permit_history_entries
+  join_to_view: document_group_permits
+  join_type: always_left
+  on_sql: ${permit_history_entries.document_group_permit_id} =
+    ${document_group_permits.id}
+  relationship_type: assumed_many_to_one
+
+- join_from_view: permit_history_entries
+  join_to_view: folder_user_permits
+  join_type: always_left
+  on_sql: ${permit_history_entries.folder_user_permit_id} = ${folder_user_permits.id}
+  relationship_type: assumed_many_to_one
+
+- join_from_view: permit_history_entries
+  join_to_view: folder_group_permits
+  join_type: always_left
+  on_sql: ${permit_history_entries.folder_group_permit_id} = ${folder_group_permits.id}
+  relationship_type: assumed_many_to_one
+
+- join_from_view: dashboard_history
+  join_to_view: query_presentation_collections
+  join_type: always_left
+  on_sql: ${dashboard_history.query_presentation_collection_id} =
+    ${query_presentation_collections.id}
+  relationship_type: assumed_many_to_one
+
+- join_from_view: dashboard_history
+  join_to_view: organizations
+  join_type: always_left
+  on_sql: ${dashboard_history.organization_id} = ${organizations.id}
+  relationship_type: assumed_many_to_one
+
+- join_from_view: dashboard_history
+  join_to_view: model_exploration_history
+  join_type: always_left
+  on_sql: ${dashboard_history.model_exploration_history_id} =
+    ${model_exploration_history.id}
+  relationship_type: assumed_many_to_one
+
+- join_from_view: folder_group_permits
+  join_to_view: folders
+  join_type: always_left
+  on_sql: ${folder_group_permits.folder_id} = ${folders.id}
+  relationship_type: assumed_many_to_one
+
+- join_from_view: folder_group_permits
+  join_to_view: user_groups
+  join_type: always_left
+  on_sql: ${folder_group_permits.user_group_id} = ${user_groups.id}
+  relationship_type: assumed_many_to_one
+
+- join_from_view: folder_group_permits
+  join_to_view: organizations
+  join_type: always_left
+  on_sql: ${folder_group_permits.organization_id} = ${organizations.id}
+  relationship_type: assumed_many_to_one
+
+- join_from_view: organization_visualization_settings
+  join_to_view: organizations
+  join_type: always_left
+  on_sql: ${organization_visualization_settings.organization_id} = ${organizations.id}
+  relationship_type: assumed_many_to_one
+
+- join_from_view: impersonation_sessions
+  join_to_view: organizations
+  join_type: always_left
+  on_sql: ${impersonation_sessions.organization_id} = ${organizations.id}
+  relationship_type: assumed_many_to_one
+
+- join_from_view: membership_connection_roles
+  join_to_view: memberships
+  join_type: always_left
+  on_sql: ${membership_connection_roles.membership_id} = ${memberships.id}
+  relationship_type: assumed_many_to_one
+
+- join_from_view: membership_connection_roles
+  join_to_view: connections
+  join_type: always_left
+  on_sql: ${membership_connection_roles.connection_id} = ${connections.id}
+  relationship_type: assumed_many_to_one
+
+- join_from_view: looker_model_explores
+  join_to_view: looker_models
+  join_type: always_left
+  on_sql: ${looker_model_explores.looker_model_id} = ${looker_models.id}
+  relationship_type: assumed_many_to_one
+
+- join_from_view: workbooks
+  join_to_view: organizations
+  join_type: always_left
+  on_sql: ${workbooks.organization_id} = ${organizations.id}
+  relationship_type: assumed_many_to_one
+
+- join_from_view: workbooks
+  join_to_view: folders
+  join_type: always_left
+  on_sql: ${workbooks.folder_id} = ${folders.id}
+  relationship_type: assumed_many_to_one
+
+- join_from_view: scheduled_job_downloads
+  join_to_view: organizations
+  join_type: always_left
+  on_sql: ${scheduled_job_downloads.organization_id} = ${organizations.id}
+  relationship_type: assumed_many_to_one
+
+- join_from_view: scheduled_job_downloads
+  join_to_view: users
+  join_type: always_left
+  on_sql: ${scheduled_job_downloads.user_id} = ${users.id}
+  relationship_type: assumed_many_to_one
+
+- join_from_view: scheduled_job_downloads
+  join_to_view: scheduled_jobs
+  join_type: always_left
+  on_sql: ${scheduled_job_downloads.scheduled_job_id} = ${scheduled_jobs.id}
+  relationship_type: assumed_many_to_one
+
+- join_from_view: document_drafts
+  join_to_view: organizations
+  join_type: always_left
+  on_sql: ${document_drafts.organization_id} = ${organizations.id}
+  relationship_type: assumed_many_to_one
+
+- join_from_view: embed_sessions
+  join_to_view: memberships
+  join_type: always_left
+  on_sql: ${embed_sessions.membership_id} = ${memberships.id}
+  relationship_type: assumed_many_to_one
+
+- join_from_view: embed_sessions
+  join_to_view: custom_themes
+  join_type: always_left
+  on_sql: ${embed_sessions.custom_theme_id} = ${custom_themes.id}
+  relationship_type: assumed_many_to_one
+
+- join_from_view: organization_email_settings
+  join_to_view: organizations
+  join_type: always_left
+  on_sql: ${organization_email_settings.organization_id} = ${organizations.id}
+  relationship_type: assumed_many_to_one
+
+- join_from_view: folder_labels
+  join_to_view: organizations
+  join_type: always_left
+  on_sql: ${folder_labels.organization_id} = ${organizations.id}
+  relationship_type: assumed_many_to_one
+
+- join_from_view: folder_labels
+  join_to_view: users
+  join_type: always_left
+  on_sql: ${folder_labels.user_id} = ${users.id}
+  relationship_type: assumed_many_to_one
+
+- join_from_view: folder_labels
+  join_to_view: folders
+  join_type: always_left
+  on_sql: ${folder_labels.folder_id} = ${folders.id}
+  relationship_type: assumed_many_to_one
+
+- join_from_view: connections
+  join_to_view: organizations
+  join_type: always_left
+  on_sql: ${connections.organization_id} = ${organizations.id}
+  relationship_type: assumed_many_to_one
+
+- join_from_view: models
+  join_to_view: connections
+  join_type: always_left
+  on_sql: ${models.connection_id} = ${connections.id}
+  relationship_type: assumed_many_to_one
+
+- join_from_view: models
+  join_to_view: organizations
+  join_type: always_left
+  on_sql: ${models.organization_id} = ${organizations.id}
+  relationship_type: assumed_many_to_one
+
+- join_from_view: models
+  join_to_view: users
+  join_type: always_left
+  on_sql: ${models.user_id} = ${users.id}
+  relationship_type: assumed_many_to_one
+
+- join_from_view: scheduled_tasks
+  join_to_view: organizations
+  join_type: always_left
+  on_sql: ${scheduled_tasks.organization_id} = ${organizations.id}
+  relationship_type: assumed_many_to_one
+
+- join_from_view: sessions
+  join_to_view: users
+  join_type: always_left
+  on_sql: ${sessions.user_id} = ${users.id}
+  relationship_type: assumed_many_to_one
+
+- join_from_view: vanity_domains
+  join_to_view: organizations
+  join_type: always_left
+  on_sql: ${vanity_domains.organization_id} = ${organizations.id}
+  relationship_type: assumed_many_to_one
+
+- join_from_view: invitation_requests
+  join_to_view: organizations
+  join_type: always_left
+  on_sql: ${invitation_requests.organization_id} = ${organizations.id}
+  relationship_type: assumed_many_to_one
+
+- join_from_view: user_group_memberships_history
+  join_to_view: user_groups
+  join_type: always_left
+  on_sql: ${user_group_memberships_history.user_group_id} = ${user_groups.id}
+  relationship_type: assumed_many_to_one
+
+- join_from_view: user_group_memberships_history
+  join_to_view: memberships
+  join_type: always_left
+  on_sql: ${user_group_memberships_history.membership_id} = ${memberships.id}
+  relationship_type: assumed_many_to_one
+
+- join_from_view: user_group_memberships_history
+  join_to_view: organizations
+  join_type: always_left
+  on_sql: ${user_group_memberships_history.organization_id} = ${organizations.id}
+  relationship_type: assumed_many_to_one
+
+- join_from_view: organization_api_keys
+  join_to_view: organizations
+  join_type: always_left
+  on_sql: ${organization_api_keys.organization_id} = ${organizations.id}
+  relationship_type: assumed_many_to_one
+
+- join_from_view: scheduled_jobs
+  join_to_view: organizations
+  join_type: always_left
+  on_sql: ${scheduled_jobs.organization_id} = ${organizations.id}
+  relationship_type: assumed_many_to_one
+
+- join_from_view: scheduled_jobs
+  join_to_view: scheduled_tasks
+  join_type: always_left
+  on_sql: ${scheduled_jobs.scheduled_task_id} = ${scheduled_tasks.id}
+  relationship_type: assumed_many_to_one
+
+- join_from_view: scheduled_jobs
+  join_to_view: scheduled_task_destinations
+  join_type: always_left
+  on_sql: ${scheduled_jobs.scheduled_task_destination_id} =
+    ${scheduled_task_destinations.id}
+  relationship_type: assumed_many_to_one
+
+- join_from_view: scheduled_jobs
+  join_to_view: users
+  join_type: always_left
+  on_sql: ${scheduled_jobs.user_id} = ${users.id}
+  relationship_type: assumed_many_to_one
+
+- join_from_view: embed_session_redemptions
+  join_to_view: embed_sessions
+  join_type: always_left
+  on_sql: ${embed_session_redemptions.embed_session_id} = ${embed_sessions.id}
+  relationship_type: assumed_many_to_one
+
+- join_from_view: color_palettes
+  join_to_view: organizations
+  join_type: always_left
+  on_sql: ${color_palettes.organization_id} = ${organizations.id}
+  relationship_type: assumed_many_to_one
+
+- join_from_view: document_identifier_history
+  join_to_view: organizations
+  join_type: always_left
+  on_sql: ${document_identifier_history.organization_id} = ${organizations.id}
+  relationship_type: assumed_many_to_one
+
+- join_from_view: document_identifier_history
+  join_to_view: workbooks
+  join_type: always_left
+  on_sql: ${document_identifier_history.workbook_id} = ${workbooks.id}
+  relationship_type: assumed_many_to_one
+
+- join_from_view: labels
+  join_to_view: organizations
+  join_type: always_left
+  on_sql: ${labels.organization_id} = ${organizations.id}
+  relationship_type: assumed_many_to_one
+
+- join_from_view: model_exploration_history
+  join_to_view: models
+  join_type: always_left
+  on_sql: ${model_exploration_history.model_id} = ${models.id}
+  relationship_type: assumed_many_to_one
+
+- join_from_view: model_exploration_history
+  join_to_view: organizations
+  join_type: always_left
+  on_sql: ${model_exploration_history.organization_id} = ${organizations.id}
+  relationship_type: assumed_many_to_one
+
+- join_from_view: model_exploration_history
+  join_to_view: users
+  join_type: always_left
+  on_sql: ${model_exploration_history.user_id} = ${users.id}
+  relationship_type: assumed_many_to_one
+
+- join_from_view: dashboard_text_tiles
+  join_to_view: organizations
+  join_type: always_left
+  on_sql: ${dashboard_text_tiles.organization_id} = ${organizations.id}
+  relationship_type: assumed_many_to_one
+
+- join_from_view: query_presentation_collections
+  join_to_view: organizations
+  join_type: always_left
+  on_sql: ${query_presentation_collections.organization_id} = ${organizations.id}
+  relationship_type: assumed_many_to_one
+
+- join_from_view: query_presentation_collections
+  join_to_view: models
+  join_type: always_left
+  on_sql: ${query_presentation_collections.model_id} = ${models.id}
+  relationship_type: assumed_many_to_one
+
+- join_from_view: saml_configuration
+  join_to_view: organizations
+  join_type: always_left
+  on_sql: ${saml_configuration.organization_id} = ${organizations.id}
+  relationship_type: assumed_many_to_one
+
+- join_from_view: webhook_secret
+  join_to_view: models
+  join_type: always_left
+  on_sql: ${webhook_secret.model_id} = ${models.id}
+  relationship_type: assumed_many_to_one
+
+- join_from_view: webhook_secret
+  join_to_view: organizations
+  join_type: always_left
+  on_sql: ${webhook_secret.organization_id} = ${organizations.id}
+  relationship_type: assumed_many_to_one
+
+- join_from_view: dashboard_layout_views
+  join_to_view: dashboard_layouts
+  join_type: always_left
+  on_sql: ${dashboard_layout_views.dashboard_layout_id} = ${dashboard_layouts.id}
+  relationship_type: assumed_many_to_one
+
+- join_from_view: qp_collection_memberships
+  join_to_view: query_presentations
+  join_type: always_left
+  on_sql: ${qp_collection_memberships.query_presentation_id} =
+    ${query_presentations.id}
+  relationship_type: assumed_many_to_one
+
+- join_from_view: qp_collection_memberships
+  join_to_view: query_presentation_collections
+  join_type: always_left
+  on_sql: ${qp_collection_memberships.query_presentation_collection_id} =
+    ${query_presentation_collections.id}
+  relationship_type: assumed_many_to_one
+
+- join_from_view: user_attribute_definitions
+  join_to_view: organizations
+  join_type: always_left
+  on_sql: ${user_attribute_definitions.organization_id} = ${organizations.id}
+  relationship_type: assumed_many_to_one
+
+- join_from_view: schema_refresh_trigger_history
+  join_to_view: organizations
+  join_type: always_left
+  on_sql: ${schema_refresh_trigger_history.organization_id} = ${organizations.id}
+  relationship_type: assumed_many_to_one
+
+- join_from_view: schema_refresh_trigger_history
+  join_to_view: schema_refresh_triggers
+  join_type: always_left
+  on_sql: ${schema_refresh_trigger_history.schema_refresh_trigger_id} =
+    ${schema_refresh_triggers.id}
+  relationship_type: assumed_many_to_one
+
+- join_from_view: user_groups
+  join_to_view: organizations
+  join_type: always_left
+  on_sql: ${user_groups.organization_id} = ${organizations.id}
+  relationship_type: assumed_many_to_one
+
+- join_from_view: webhook_log
+  join_to_view: organizations
+  join_type: always_left
+  on_sql: ${webhook_log.organization_id} = ${organizations.id}
+  relationship_type: assumed_many_to_one
+
+- join_from_view: webhook_log
+  join_to_view: models
+  join_type: always_left
+  on_sql: ${webhook_log.model_id} = ${models.id}
+  relationship_type: assumed_many_to_one
+
+- join_from_view: favorites
+  join_to_view: organizations
+  join_type: always_left
+  on_sql: ${favorites.organization_id} = ${organizations.id}
+  relationship_type: assumed_many_to_one
+
+- join_from_view: favorites
+  join_to_view: users
+  join_type: always_left
+  on_sql: ${favorites.user_id} = ${users.id}
+  relationship_type: assumed_many_to_one
+
+- join_from_view: favorites
+  join_to_view: workbooks
+  join_type: always_left
+  on_sql: ${favorites.workbook_id} = ${workbooks.id}
+  relationship_type: assumed_many_to_one
+
+- join_from_view: scheduled_task_destination_credentials
+  join_to_view: organizations
+  join_type: always_left
+  on_sql: ${scheduled_task_destination_credentials.organization_id} =
+    ${organizations.id}
+  relationship_type: assumed_many_to_one
+
+- join_from_view: schema_refresh_triggers
+  join_to_view: organizations
+  join_type: always_left
+  on_sql: ${schema_refresh_triggers.organization_id} = ${organizations.id}
+  relationship_type: assumed_many_to_one
+
+- join_from_view: schema_refresh_triggers
+  join_to_view: models
+  join_type: always_left
+  on_sql: ${schema_refresh_triggers.model_id} = ${models.id}
+  relationship_type: assumed_many_to_one
+
+- join_from_view: embed_secrets
+  join_to_view: organizations
+  join_type: always_left
+  on_sql: ${embed_secrets.organization_id} = ${organizations.id}
+  relationship_type: assumed_many_to_one
+
+- join_from_view: scheduled_task_destination_recipients
+  join_to_view: scheduled_task_destinations
+  join_type: always_left
+  on_sql: ${scheduled_task_destination_recipients.scheduled_task_destination_id} =
+    ${scheduled_task_destinations.id}
+  relationship_type: assumed_many_to_one
+
+- join_from_view: scheduled_task_destination_recipients
+  join_to_view: organizations
+  join_type: always_left
+  on_sql: ${scheduled_task_destination_recipients.organization_id} =
+    ${organizations.id}
+  relationship_type: assumed_many_to_one
+
+- join_from_view: scheduled_task_destination_recipients
+  join_to_view: memberships
+  join_type: always_left
+  on_sql: ${scheduled_task_destination_recipients.membership_id} = ${memberships.id}
+  relationship_type: assumed_many_to_one
+
+- join_from_view: folder_user_permits
+  join_to_view: folders
+  join_type: always_left
+  on_sql: ${folder_user_permits.folder_id} = ${folders.id}
+  relationship_type: assumed_many_to_one
+
+- join_from_view: folder_user_permits
+  join_to_view: users
+  join_type: always_left
+  on_sql: ${folder_user_permits.user_id} = ${users.id}
+  relationship_type: assumed_many_to_one
+
+- join_from_view: folder_user_permits
+  join_to_view: organizations
+  join_type: always_left
+  on_sql: ${folder_user_permits.organization_id} = ${organizations.id}
+  relationship_type: assumed_many_to_one
+
+- join_from_view: memberships
+  join_to_view: organizations
+  join_type: always_left
+  on_sql: ${memberships.organization_id} = ${organizations.id}
+  relationship_type: assumed_many_to_one
+
+- join_from_view: memberships
+  join_to_view: users
+  join_type: always_left
+  on_sql: ${memberships.user_id} = ${users.id}
+  relationship_type: assumed_many_to_one
+
+- join_from_view: scheduled_job_history
+  join_to_view: organizations
+  join_type: always_left
+  on_sql: ${scheduled_job_history.organization_id} = ${organizations.id}
+  relationship_type: assumed_many_to_one
+
+- join_from_view: scheduled_job_history
+  join_to_view: scheduled_jobs
+  join_type: always_left
+  on_sql: ${scheduled_job_history.scheduled_job_id} = ${scheduled_jobs.id}
+  relationship_type: assumed_many_to_one
+
+- join_from_view: scheduled_job_history
+  join_to_view: scheduled_tasks
+  join_type: always_left
+  on_sql: ${scheduled_job_history.scheduled_task_id} = ${scheduled_tasks.id}
+  relationship_type: assumed_many_to_one
+
+- join_from_view: scheduled_job_history
+  join_to_view: scheduled_task_destinations
+  join_type: always_left
+  on_sql: ${scheduled_job_history.scheduled_task_destination_id} =
+    ${scheduled_task_destinations.id}
+  relationship_type: assumed_many_to_one
+
+- join_from_view: scheduled_job_history
+  join_to_view: users
+  join_type: always_left
+  on_sql: ${scheduled_job_history.user_id} = ${users.id}
+  relationship_type: assumed_many_to_one
+
+- join_from_view: query_presentations
+  join_to_view: vis_config
+  join_type: always_left
+  on_sql: ${query_presentations.vis_config_id} = ${vis_config.id}
+  relationship_type: assumed_many_to_one
+
+- join_from_view: query_presentations
+  join_to_view: organizations
+  join_type: always_left
+  on_sql: ${query_presentations.organization_id} = ${organizations.id}
+  relationship_type: assumed_many_to_one
+
+- join_from_view: query_presentations
+  join_to_view: models
+  join_type: always_left
+  on_sql: ${query_presentations.model_id} = ${models.id}
+  relationship_type: assumed_many_to_one
+
+- join_from_view: query_presentations
+  join_to_view: file_uploads
+  join_type: always_left
+  on_sql: ${query_presentations.file_upload_id} = ${file_uploads.id}
+  relationship_type: assumed_many_to_one
+
+- join_from_view: file_uploads
+  join_to_view: organizations
+  join_type: always_left
+  on_sql: ${file_uploads.organization_id} = ${organizations.id}
+  relationship_type: assumed_many_to_one
+
+- join_from_view: file_uploads
+  join_to_view: connections
+  join_type: always_left
+  on_sql: ${file_uploads.connection_id} = ${connections.id}
+  relationship_type: assumed_many_to_one
+
+- join_from_view: organization_api_key_history
+  join_to_view: organization_api_keys
+  join_type: always_left
+  on_sql: ${organization_api_key_history.organization_api_key_id} =
+    ${organization_api_keys.id}
+  relationship_type: assumed_many_to_one
+
+- join_from_view: organization_api_key_history
+  join_to_view: organizations
+  join_type: always_left
+  on_sql: ${organization_api_key_history.organization_id} = ${organizations.id}
+  relationship_type: assumed_many_to_one
+
+- join_from_view: workbook_labels
+  join_to_view: organizations
+  join_type: always_left
+  on_sql: ${workbook_labels.organization_id} = ${organizations.id}
+  relationship_type: assumed_many_to_one
+
+- join_from_view: workbook_labels
+  join_to_view: users
+  join_type: always_left
+  on_sql: ${workbook_labels.user_id} = ${users.id}
+  relationship_type: assumed_many_to_one
+
+- join_from_view: workbook_labels
+  join_to_view: workbooks
+  join_type: always_left
+  on_sql: ${workbook_labels.workbook_id} = ${workbooks.id}
+  relationship_type: assumed_many_to_one
+
+- join_from_view: invitations
+  join_to_view: organizations
+  join_type: always_left
+  on_sql: ${invitations.organization_id} = ${organizations.id}
+  relationship_type: assumed_many_to_one
+
+- join_from_view: document_user_permits
+  join_to_view: workbooks
+  join_type: always_left
+  on_sql: ${document_user_permits.workbook_id} = ${workbooks.id}
+  relationship_type: assumed_many_to_one
+
+- join_from_view: document_user_permits
+  join_to_view: users
+  join_type: always_left
+  on_sql: ${document_user_permits.user_id} = ${users.id}
+  relationship_type: assumed_many_to_one
+
+- join_from_view: document_user_permits
+  join_to_view: organizations
+  join_type: always_left
+  on_sql: ${document_user_permits.organization_id} = ${organizations.id}
+  relationship_type: assumed_many_to_one
+
+- join_from_view: looker_models
+  join_to_view: looker_configurations
+  join_type: always_left
+  on_sql: ${looker_models.looker_configuration_id} = ${looker_configurations.id}
+  relationship_type: assumed_many_to_one
+
+- join_from_view: looker_models
+  join_to_view: models
+  join_type: always_left
+  on_sql: ${looker_models.model_id} = ${models.id}
+  relationship_type: assumed_many_to_one
+
+- join_from_view: org_feature_flags
+  join_to_view: organizations
+  join_type: always_left
+  on_sql: ${org_feature_flags.organization_id} = ${organizations.id}
+  relationship_type: assumed_many_to_one
+
+- join_from_view: membership_organization_roles
+  join_to_view: memberships
+  join_type: always_left
+  on_sql: ${membership_organization_roles.membership_id} = ${memberships.id}
+  relationship_type: assumed_many_to_one
+
+- join_from_view: organization_labels
+  join_to_view: organizations
+  join_type: always_left
+  on_sql: ${organization_labels.organization_id} = ${organizations.id}
+  relationship_type: assumed_many_to_one
+
+- join_from_view: organization_labels
+  join_to_view: users
+  join_type: always_left
+  on_sql: ${organization_labels.user_id} = ${users.id}
+  relationship_type: assumed_many_to_one
+
+- join_from_view: dashboard_custom_themes
+  join_to_view: dashboard_layouts
+  join_type: always_left
+  on_sql: ${dashboard_custom_themes.dashboard_layout_id} = ${dashboard_layouts.id}
+  relationship_type: assumed_many_to_one
+
+- join_from_view: dashboard_custom_themes
+  join_to_view: organizations
+  join_type: always_left
+  on_sql: ${dashboard_custom_themes.organization_id} = ${organizations.id}
+  relationship_type: assumed_many_to_one
+
+- join_from_view: scheduled_task_destinations
+  join_to_view: scheduled_tasks
+  join_type: always_left
+  on_sql: ${scheduled_task_destinations.scheduled_task_id} = ${scheduled_tasks.id}
+  relationship_type: assumed_many_to_one
+
+- join_from_view: queries
+  join_to_view: models
+  join_type: always_left
+  on_sql: ${queries.model_id} = ${models.id}
+  relationship_type: assumed_many_to_one
+
+- join_from_view: custom_themes
+  join_to_view: organizations
+  join_type: always_left
+  on_sql: ${custom_themes.organization_id} = ${organizations.id}
+  relationship_type: assumed_many_to_one
+
+- join_from_view: membership_user_attributes
+  join_to_view: organizations
+  join_type: always_left
+  on_sql: ${membership_user_attributes.organization_id} = ${organizations.id}
+  relationship_type: assumed_many_to_one
+
+- join_from_view: membership_user_attributes
+  join_to_view: memberships
+  join_type: always_left
+  on_sql: ${membership_user_attributes.membership_id} = ${memberships.id}
+  relationship_type: assumed_many_to_one
+
+- join_from_view: membership_user_attributes
+  join_to_view: user_attribute_definitions
+  join_type: always_left
+  on_sql: ${membership_user_attributes.user_attribute_definition_id} =
+    ${user_attribute_definitions.id}
+  relationship_type: assumed_many_to_one
+
+- join_from_view: document_group_permits
+  join_to_view: workbooks
+  join_type: always_left
+  on_sql: ${document_group_permits.workbook_id} = ${workbooks.id}
+  relationship_type: assumed_many_to_one
+
+- join_from_view: document_group_permits
+  join_to_view: user_groups
+  join_type: always_left
+  on_sql: ${document_group_permits.user_group_id} = ${user_groups.id}
+  relationship_type: assumed_many_to_one
+
+- join_from_view: document_group_permits
+  join_to_view: organizations
+  join_type: always_left
+  on_sql: ${document_group_permits.organization_id} = ${organizations.id}
+  relationship_type: assumed_many_to_one
+
+- join_from_view: ai_settings
+  join_to_view: organizations
+  join_type: always_left
+  on_sql: ${ai_settings.organization_id} = ${organizations.id}
+  relationship_type: assumed_many_to_one
+
+- join_from_view: user_group_memberships
+  join_to_view: organizations
+  join_type: always_left
+  on_sql: ${user_group_memberships.organization_id} = ${organizations.id}
+  relationship_type: assumed_many_to_one
+
+- join_from_view: user_group_memberships
+  join_to_view: user_groups
+  join_type: always_left
+  on_sql: ${user_group_memberships.user_group_id} = ${user_groups.id}
+  relationship_type: assumed_many_to_one
+
+- join_from_view: user_group_memberships
+  join_to_view: memberships
+  join_type: always_left
+  on_sql: ${user_group_memberships.membership_id} = ${memberships.id}
+  relationship_type: assumed_many_to_one
+
+- join_from_view: dashboard_layouts
+  join_to_view: query_presentation_collections
+  join_type: always_left
+  on_sql: ${dashboard_layouts.query_presentation_collection_id} =
+    ${query_presentation_collections.id}
+  relationship_type: assumed_many_to_one
+
+- join_from_view: dashboard_layouts
+  join_to_view: organizations
+  join_type: always_left
+  on_sql: ${dashboard_layouts.organization_id} = ${organizations.id}
+  relationship_type: assumed_many_to_one
+
+- join_from_view: dashboard_layouts
+  join_to_view: workbooks
+  join_type: always_left
+  on_sql: ${dashboard_layouts.workbook_id} = ${workbooks.id}
+  relationship_type: assumed_many_to_one
+
+- join_from_view: folder_history
+  join_to_view: folders
+  join_type: always_left
+  on_sql: ${folder_history.folder_id} = ${folders.id}
+  relationship_type: assumed_many_to_one
+
+- join_from_view: folder_history
+  join_to_view: organizations
+  join_type: always_left
+  on_sql: ${folder_history.organization_id} = ${organizations.id}
+  relationship_type: assumed_many_to_one
+
+- join_from_view: looker_configurations
+  join_to_view: organizations
+  join_type: always_left
+  on_sql: ${looker_configurations.organization_id} = ${organizations.id}
+  relationship_type: assumed_many_to_one
+
+- join_from_view: looker_configurations
+  join_to_view: connections
+  join_type: always_left
+  on_sql: ${looker_configurations.connection_id} = ${connections.id}
+  relationship_type: assumed_many_to_one

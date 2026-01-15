@@ -1,0 +1,52 @@
+# Reference this view as scheduled_jobs
+schema: public
+
+dimensions:
+  created_at: {}
+  updated_at: {}
+  state: {}
+  one_time_run: {}
+  format: {}
+  url_prefix: {}
+  render_artifact_json: {}
+  entity: {}
+  error_email: {}
+  metadata: {}
+  kill_requested_at: {}
+  error: {}
+  kill_jobs_on_failure: {}
+  condition_query_map_key: {}
+  condition_type: {}
+  fan_out: {}
+
+  id:
+    format: ID
+    primary_key: true
+
+  organization_id:
+    format: ID
+
+  scheduled_task_id:
+    format: ID
+
+  scheduled_task_destination_id:
+    format: ID
+
+  job_execution_id:
+    format: ID
+
+  entity_id:
+    format: ID
+
+  user_id:
+    format: ID
+
+  condition_bulk_job_id:
+    format: ID
+
+  auth_user_id:
+    format: ID
+
+measures:
+  count:
+    aggregate_type: count

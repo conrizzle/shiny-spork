@@ -1,0 +1,23 @@
+# Reference this view as ai_settings
+schema: public
+
+dimensions:
+  created_at: {}
+  updated_at: {}
+  query_helper: {}
+  calculations_helper: {}
+  vis_helper: {}
+  blank_workbook_helper: {}
+  blobpilot: {}
+  summarize_data: {}
+
+  id:
+    format: ID
+    primary_key: true
+
+  organization_id:
+    format: ID
+
+measures:
+  count:
+    aggregate_type: count

@@ -1,0 +1,19 @@
+# Reference this view as connection_enviroments
+schema: public
+
+dimensions:
+  user_attribute_values: {}
+
+  id:
+    format: ID
+    primary_key: true
+
+  base_connection_id:
+    format: ID
+
+  environment_connection_id:
+    format: ID
+
+measures:
+  count:
+    aggregate_type: count

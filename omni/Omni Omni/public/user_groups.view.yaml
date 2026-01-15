@@ -1,0 +1,21 @@
+# Reference this view as user_groups
+schema: public
+
+dimensions:
+  name: {}
+  description: {}
+  created_at: {}
+  updated_at: {}
+  mini_uuid: {}
+  embed_entity: {}
+
+  id:
+    format: ID
+    primary_key: true
+
+  organization_id:
+    format: ID
+
+measures:
+  count:
+    aggregate_type: count

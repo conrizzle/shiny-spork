@@ -1,0 +1,25 @@
+# Reference this view as folders
+schema: public
+
+dimensions:
+  path: {}
+  name: {}
+  created_at: {}
+  organization_role: {}
+  organization_user_permissions_override: {}
+  public_role: {}
+  public_user_permissions_override: {}
+
+  id:
+    format: ID
+    primary_key: true
+
+  organization_id:
+    format: ID
+
+  owner_id:
+    format: ID
+
+measures:
+  count:
+    aggregate_type: count

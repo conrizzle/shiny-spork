@@ -1,0 +1,19 @@
+# Reference this view as schema_refresh_trigger_history
+schema: public
+
+dimensions:
+  created_at: {}
+
+  id:
+    format: ID
+    primary_key: true
+
+  organization_id:
+    format: ID
+
+  schema_refresh_trigger_id:
+    format: ID
+
+measures:
+  count:
+    aggregate_type: count

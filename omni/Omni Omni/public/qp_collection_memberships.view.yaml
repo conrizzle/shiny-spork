@@ -1,0 +1,18 @@
+# Reference this view as qp_collection_memberships
+schema: public
+
+dimensions:
+  query_presentation_id:
+    format: ID
+
+  query_presentation_collection_id:
+    format: ID
+
+measures:
+  count:
+    aggregate_type: count
+custom_compound_primary_key_sql:
+  [
+    "${qp_collection_memberships.query_presentation_id}",
+    "${qp_collection_memberships.query_presentation_collection_id}"
+  ]

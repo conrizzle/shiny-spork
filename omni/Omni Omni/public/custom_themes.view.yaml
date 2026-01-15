@@ -1,0 +1,27 @@
+# Reference this view as custom_themes
+schema: public
+
+dimensions:
+  created_at: {}
+  updated_at: {}
+  deleted_at: {}
+  name: {}
+  styles: {}
+  embed_json_hash: {}
+
+  id:
+    format: ID
+    primary_key: true
+
+  organization_id:
+    format: ID
+
+  continuous_color_palette_id:
+    format: ID
+
+  discrete_color_palette_id:
+    format: ID
+
+measures:
+  count:
+    aggregate_type: count

@@ -1,0 +1,35 @@
+# Reference this view as embed_sessions
+schema: public
+
+dimensions:
+  created_at: {}
+  updated_at: {}
+  deleted_at: {}
+  content_path: {}
+  expires: {}
+  nonce: {}
+  url: {}
+  from_content_path: {}
+  link_access: {}
+  custom_theme: {}
+  connection_ids: {}
+  mode: {}
+  ip: {}
+  filter_search_param: {}
+
+  id:
+    format: ID
+    primary_key: true
+
+  membership_id:
+    format: ID
+
+  resolved_connection_id:
+    format: ID
+
+  custom_theme_id:
+    format: ID
+
+measures:
+  count:
+    aggregate_type: count

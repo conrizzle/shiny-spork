@@ -1,0 +1,29 @@
+# Reference this view as user_group_memberships_history
+schema: public
+
+dimensions:
+  created_at: {}
+  deleted_at: {}
+
+  id:
+    format: ID
+    primary_key: true
+
+  user_group_id:
+    format: ID
+
+  membership_id:
+    format: ID
+
+  organization_id:
+    format: ID
+
+  created_by_id:
+    format: ID
+
+  created_by_api_key_id:
+    format: ID
+
+measures:
+  count:
+    aggregate_type: count

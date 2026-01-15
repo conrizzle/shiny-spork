@@ -1,0 +1,17 @@
+# Reference this view as embed_session_redemptions
+schema: public
+
+dimensions:
+  created_at: {}
+  nonce: {}
+
+  id:
+    format: ID
+    primary_key: true
+
+  embed_session_id:
+    format: ID
+
+measures:
+  count:
+    aggregate_type: count

@@ -1,0 +1,18 @@
+# Reference this view as vis_config
+schema: public
+
+dimensions:
+  created_at: {}
+  json_hash: {}
+  vis_config_json: {}
+  type: {}
+  chart_type: {}
+  fields: {}
+
+  id:
+    format: ID
+    primary_key: true
+
+measures:
+  count:
+    aggregate_type: count

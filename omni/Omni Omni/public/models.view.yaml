@@ -1,0 +1,42 @@
+# Reference this view as models
+schema: public
+
+dimensions:
+  version: {}
+  created_at: {}
+  updated_at: {}
+  name: {}
+  deleted_at: {}
+  model_kind: {}
+  has_git: {}
+  pull_request_url: {}
+  git_sha: {}
+  pull_request_required: {}
+  branch_per_pull_request: {}
+  created_by_principal: {}
+  disable_auto_sync: {}
+  git_in_sync: {}
+  branch_schema_refresh: {}
+
+  id:
+    format: ID
+    primary_key: true
+
+  connection_id:
+    format: ID
+
+  organization_id:
+    format: ID
+
+  base_model_id:
+    format: ID
+
+  user_id:
+    format: ID
+
+  environment_connection_id:
+    format: ID
+
+measures:
+  count:
+    aggregate_type: count

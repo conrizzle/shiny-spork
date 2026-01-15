@@ -1,0 +1,25 @@
+# Reference this view as impersonation_sessions
+schema: public
+
+dimensions:
+  created_at: {}
+  deleted_at: {}
+  expires: {}
+  reason: {}
+
+  id:
+    format: ID
+    primary_key: true
+
+  organization_id:
+    format: ID
+
+  impersonated_user_id:
+    format: ID
+
+  impersonating_user_id:
+    format: ID
+
+measures:
+  count:
+    aggregate_type: count

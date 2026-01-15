@@ -1,0 +1,22 @@
+# Reference this view as query_presentation_collections
+schema: public
+
+dimensions:
+  created_at: {}
+  filter_config: {}
+  filter_config_version: {}
+  filter_order: {}
+
+  id:
+    format: ID
+    primary_key: true
+
+  organization_id:
+    format: ID
+
+  model_id:
+    format: ID
+
+measures:
+  count:
+    aggregate_type: count

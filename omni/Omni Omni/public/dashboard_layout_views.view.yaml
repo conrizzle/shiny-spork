@@ -1,0 +1,14 @@
+# Reference this view as dashboard_layout_views
+schema: public
+
+dimensions:
+  updated_at: {}
+  visits: {}
+
+  dashboard_layout_id:
+    format: ID
+    primary_key: true
+
+measures:
+  count:
+    aggregate_type: count

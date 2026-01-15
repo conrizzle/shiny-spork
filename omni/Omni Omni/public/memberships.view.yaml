@@ -1,0 +1,41 @@
+# Reference this view as memberships
+schema: public
+
+dimensions:
+  created_at: {}
+  updated_at: {}
+  deleted_at: {}
+  invite_accepted_at: {}
+  invite_declined_at: {}
+  invite_expires_at: {}
+  schedule_only: {}
+  invitation: {}
+  standard: {}
+  embed_entity: {}
+  external: {}
+  embed_email: {}
+  timezone: {}
+  preferences: {}
+
+  id:
+    format: ID
+    primary_key: true
+
+  organization_id:
+    format: ID
+
+  user_id:
+    format: ID
+
+  invited_by_id:
+    format: ID
+
+  external_id:
+    format: ID
+
+  user_entities_suggestion_id:
+    format: ID
+
+measures:
+  count:
+    aggregate_type: count

@@ -1,0 +1,23 @@
+# Reference this view as document_identifier_history
+schema: public
+
+dimensions:
+  former_document_identifier: {}
+  created_at: {}
+
+  id:
+    format: ID
+    primary_key: true
+
+  created_by_id:
+    format: ID
+
+  organization_id:
+    format: ID
+
+  workbook_id:
+    format: ID
+
+measures:
+  count:
+    aggregate_type: count

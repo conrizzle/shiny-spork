@@ -1,0 +1,25 @@
+# Reference this view as scheduled_task_destination_recipients
+schema: public
+
+dimensions:
+  created_at: {}
+  updated_at: {}
+  deleted_at: {}
+  unsubscribe_token: {}
+
+  id:
+    format: ID
+    primary_key: true
+
+  scheduled_task_destination_id:
+    format: ID
+
+  organization_id:
+    format: ID
+
+  membership_id:
+    format: ID
+
+measures:
+  count:
+    aggregate_type: count

@@ -1,0 +1,46 @@
+# Reference this view as membership_history
+schema: public
+
+dimensions:
+  invite_accepted_at: {}
+  invite_declined_at: {}
+  invite_expires_at: {}
+  schedule_only: {}
+  standard: {}
+  external: {}
+  invitation: {}
+  embed_entity: {}
+  created_at: {}
+  deleted_at: {}
+
+  id:
+    format: ID
+    primary_key: true
+
+  membership_id:
+    format: ID
+
+  organization_id:
+    format: ID
+
+  user_id:
+    format: ID
+
+  invited_by_id:
+    format: ID
+
+  user_entities_suggestion_id:
+    format: ID
+
+  external_id:
+    format: ID
+
+  created_by_api_key_id:
+    format: ID
+
+  created_by_id:
+    format: ID
+
+measures:
+  count:
+    aggregate_type: count

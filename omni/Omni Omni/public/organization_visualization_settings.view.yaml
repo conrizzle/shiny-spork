@@ -1,0 +1,23 @@
+# Reference this view as organization_visualization_settings
+schema: public
+
+dimensions:
+  created_at: {}
+  updated_at: {}
+
+  id:
+    format: ID
+    primary_key: true
+
+  continuous_color_scheme:
+    sql: '"continuousColorScheme"'
+
+  discrete_color_scheme:
+    sql: '"discreteColorScheme"'
+
+  organization_id:
+    format: ID
+
+measures:
+  count:
+    aggregate_type: count

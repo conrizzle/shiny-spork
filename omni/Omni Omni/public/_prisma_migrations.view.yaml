@@ -1,0 +1,19 @@
+# Reference this view as _prisma_migrations
+schema: public
+
+dimensions:
+  checksum: {}
+  finished_at: {}
+  migration_name: {}
+  logs: {}
+  rolled_back_at: {}
+  started_at: {}
+  applied_steps_count: {}
+
+  id:
+    format: ID
+    primary_key: true
+
+measures:
+  count:
+    aggregate_type: count

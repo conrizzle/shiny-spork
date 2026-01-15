@@ -1,0 +1,24 @@
+# Reference this view as saml_configuration
+schema: public
+
+dimensions:
+  created_at: {}
+  certificates: {}
+  sso_url: {}
+  auto_provision_users: {}
+  enabled: {}
+  disable_other_login_methods: {}
+
+  id:
+    format: ID
+    primary_key: true
+
+  organization_id:
+    format: ID
+
+  entity_id:
+    format: ID
+
+measures:
+  count:
+    aggregate_type: count

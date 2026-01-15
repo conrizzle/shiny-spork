@@ -1,0 +1,41 @@
+# Reference this view as scheduled_job_history
+schema: public
+
+dimensions:
+  created_at: {}
+  state: {}
+  one_time_run: {}
+  format: {}
+  entity: {}
+  error_email: {}
+  metadata: {}
+  error: {}
+  fan_out: {}
+  condition_query_map_key: {}
+  condition_type: {}
+
+  id:
+    format: ID
+    primary_key: true
+
+  organization_id:
+    format: ID
+
+  scheduled_job_id:
+    format: ID
+
+  scheduled_task_id:
+    format: ID
+
+  scheduled_task_destination_id:
+    format: ID
+
+  user_id:
+    format: ID
+
+  entity_id:
+    format: ID
+
+measures:
+  count:
+    aggregate_type: count

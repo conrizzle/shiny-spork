@@ -1,0 +1,22 @@
+# Reference this view as membership_connection_roles
+schema: public
+
+dimensions:
+  created_at: {}
+  updated_at: {}
+  deleted_at: {}
+  role_definition_name: {}
+
+  id:
+    format: ID
+    primary_key: true
+
+  membership_id:
+    format: ID
+
+  connection_id:
+    format: ID
+
+measures:
+  count:
+    aggregate_type: count

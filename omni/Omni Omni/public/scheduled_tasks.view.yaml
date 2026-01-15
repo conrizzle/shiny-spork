@@ -1,0 +1,42 @@
+# Reference this view as scheduled_tasks
+schema: public
+
+dimensions:
+  created_at: {}
+  updated_at: {}
+  deleted_at: {}
+  entity: {}
+  error_email: {}
+  schedule: {}
+  disabled_at: {}
+  name: {}
+  timezone: {}
+  metadata: {}
+  filter_config: {}
+  filter_config_version: {}
+  kill_jobs_on_failure: {}
+  condition_query_map_key: {}
+  condition_type: {}
+  fan_out: {}
+  system_disabled_at: {}
+  system_disabled_reason: {}
+
+  id:
+    format: ID
+    primary_key: true
+
+  entity_id:
+    format: ID
+
+  owner_id:
+    format: ID
+
+  updater_id:
+    format: ID
+
+  organization_id:
+    format: ID
+
+measures:
+  count:
+    aggregate_type: count

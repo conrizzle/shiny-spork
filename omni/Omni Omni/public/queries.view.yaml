@@ -1,0 +1,18 @@
+# Reference this view as queries
+schema: public
+
+dimensions:
+  query_json: {}
+  created_at: {}
+  json_hash: {}
+
+  id:
+    format: ID
+    primary_key: true
+
+  model_id:
+    format: ID
+
+measures:
+  count:
+    aggregate_type: count

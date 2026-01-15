@@ -1,0 +1,57 @@
+# Reference this view as organizations
+schema: public
+
+dimensions:
+  name: {}
+  created_at: {}
+  updated_at: {}
+  deleted_at: {}
+  default_domain: {}
+  allows_invite_requests: {}
+  timezone: {}
+  allows_session_recording: {}
+  allows_auto_support_user_creation: {}
+  in_app_notification: {}
+  embed_frame_ancestors: {}
+  default_document_organization_user_permissions_override: {}
+  allows_connection_admin_to_provision_user_permission_override: {}
+  allows_document_user_permission_override: {}
+  allows_member_to_put_documents_in_shared_root: {}
+  allows_member_to_provision_user_permission_override: {}
+  default_document_organization_role: {}
+  default_document_public_role: {}
+  default_document_public_user_permissions_override: {}
+  allows_public_access: {}
+  allows_document_can_analyze: {}
+  allows_document_can_download: {}
+  allows_document_can_drill: {}
+  allows_document_can_schedule: {}
+  allows_document_can_view_workbook: {}
+  can_analyze: {}
+  can_download: {}
+  can_drill: {}
+  can_schedule: {}
+  can_view_workbook: {}
+  custom_email_identity_arn: {}
+  support_region_allow_list: {}
+  requires_schedule_user_attributes: {}
+  allows_membership_prefers_dark: {}
+  default_prefers_dark: {}
+  allows_document_can_upload: {}
+  can_upload: {}
+  embed_session_length_seconds: {}
+  allows_login_from_support_domains: {}
+
+  id:
+    format: ID
+    primary_key: true
+
+  short_id:
+    format: ID
+
+  default_theme_id:
+    format: ID
+
+measures:
+  count:
+    aggregate_type: count

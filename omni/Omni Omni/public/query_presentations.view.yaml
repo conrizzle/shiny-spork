@@ -1,0 +1,45 @@
+# Reference this view as query_presentations
+schema: public
+
+dimensions:
+  created_at: {}
+  updated_at: {}
+  name: {}
+  mini_uuid: {}
+  renamed: {}
+  automatic_vis: {}
+  filter_order: {}
+  is_sql: {}
+  prefers_chart: {}
+  result_config: {}
+  description: {}
+  type: {}
+
+  id:
+    format: ID
+    primary_key: true
+
+  query_id:
+    format: ID
+
+  vis_config_id:
+    format: ID
+
+  organization_id:
+    format: ID
+
+  model_id:
+    format: ID
+
+  topic_name:
+    sql: '"topicName"'
+
+  view_name:
+    sql: '"viewName"'
+
+  file_upload_id:
+    format: ID
+
+measures:
+  count:
+    aggregate_type: count

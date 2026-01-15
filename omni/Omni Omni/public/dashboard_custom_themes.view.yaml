@@ -1,0 +1,21 @@
+# Reference this view as dashboard_custom_themes
+schema: public
+
+dimensions:
+  created_at: {}
+  updated_at: {}
+  deleted_at: {}
+
+  dashboard_layout_id:
+    format: ID
+    primary_key: true
+
+  organization_id:
+    format: ID
+
+  theme_id:
+    format: ID
+
+measures:
+  count:
+    aggregate_type: count

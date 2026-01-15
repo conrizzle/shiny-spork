@@ -1,0 +1,27 @@
+# Reference this view as model_exploration_history
+schema: public
+
+dimensions:
+  created_at: {}
+  deleted_at: {}
+  ephemeral: {}
+  canonical: {}
+  act: {}
+  name: {}
+
+  id:
+    format: ID
+    primary_key: true
+
+  model_id:
+    format: ID
+
+  organization_id:
+    format: ID
+
+  user_id:
+    format: ID
+
+measures:
+  count:
+    aggregate_type: count

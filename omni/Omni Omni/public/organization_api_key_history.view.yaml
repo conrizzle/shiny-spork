@@ -1,0 +1,25 @@
+# Reference this view as organization_api_key_history
+schema: public
+
+dimensions:
+  name: {}
+  enabled: {}
+  created_at: {}
+  deleted_at: {}
+
+  id:
+    format: ID
+    primary_key: true
+
+  organization_api_key_id:
+    format: ID
+
+  organization_id:
+    format: ID
+
+  created_by_id:
+    format: ID
+
+measures:
+  count:
+    aggregate_type: count

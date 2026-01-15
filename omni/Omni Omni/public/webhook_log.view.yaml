@@ -1,0 +1,24 @@
+# Reference this view as webhook_log
+schema: public
+
+dimensions:
+  hook_name: {}
+  request_json: {}
+  response_json: {}
+  response_status: {}
+  created_at: {}
+  completed_at: {}
+
+  id:
+    format: ID
+    primary_key: true
+
+  organization_id:
+    format: ID
+
+  model_id:
+    format: ID
+
+measures:
+  count:
+    aggregate_type: count

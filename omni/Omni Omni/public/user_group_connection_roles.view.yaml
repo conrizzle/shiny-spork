@@ -1,0 +1,24 @@
+# Reference this view as user_group_connection_roles
+schema: public
+
+dimensions:
+  role_definition_name: {}
+  created_at: {}
+  updated_at: {}
+
+  id:
+    format: ID
+    primary_key: true
+
+  organization_id:
+    format: ID
+
+  user_group_id:
+    format: ID
+
+  connection_id:
+    format: ID
+
+measures:
+  count:
+    aggregate_type: count

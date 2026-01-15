@@ -1,0 +1,27 @@
+# Reference this view as looker_configurations
+schema: public
+
+dimensions:
+  created_at: {}
+  updated_at: {}
+  looker_host: {}
+  client_secret_encrypted: {}
+  deleted_at: {}
+  name: {}
+
+  id:
+    format: ID
+    primary_key: true
+
+  organization_id:
+    format: ID
+
+  client_id:
+    format: ID
+
+  connection_id:
+    format: ID
+
+measures:
+  count:
+    aggregate_type: count

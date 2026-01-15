@@ -1,0 +1,46 @@
+# Reference this view as connections
+schema: public
+
+dimensions:
+  created_at: {}
+  updated_at: {}
+  name: {}
+  host: {}
+  database: {}
+  username: {}
+  default_schema: {}
+  dialect: {}
+  deleted_at: {}
+  port: {}
+  warehouse: {}
+  password_encrypted: {}
+  region: {}
+  include_schemas: {}
+  base_role: {}
+  system_timezone: {}
+  include_other_catalogs: {}
+  query_timezone: {}
+  allows_connection_admin_to_provision_user_permission_override: {}
+  allows_document_user_permission_override: {}
+  max_billing_bytes: {}
+  key_pairs: {}
+  query_timeout_seconds: {}
+  allows_user_specific_timezones: {}
+  user_attribute_name_for_connection_environments: {}
+  user_attribute_values_for_default_environment: {}
+  trust_server_certificate: {}
+  environment_connection_switches_schema_model: {}
+  branch_connection_environment_overrides_user_attr: {}
+  use_machine_auth: {}
+  scratch_schema: {}
+
+  id:
+    format: ID
+    primary_key: true
+
+  organization_id:
+    format: ID
+
+measures:
+  count:
+    aggregate_type: count

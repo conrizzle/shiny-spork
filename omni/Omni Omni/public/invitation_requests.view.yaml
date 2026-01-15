@@ -1,0 +1,18 @@
+# Reference this view as invitation_requests
+schema: public
+
+dimensions:
+  requester_email: {}
+  created_at: {}
+  dismissed_at: {}
+
+  id:
+    format: ID
+    primary_key: true
+
+  organization_id:
+    format: ID
+
+measures:
+  count:
+    aggregate_type: count

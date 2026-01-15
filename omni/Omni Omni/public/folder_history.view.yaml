@@ -1,0 +1,28 @@
+# Reference this view as folder_history
+schema: public
+
+dimensions:
+  path: {}
+  name: {}
+  created_at: {}
+  deleted_at: {}
+
+  id:
+    format: ID
+    primary_key: true
+
+  folder_id:
+    format: ID
+
+  created_by_id:
+    format: ID
+
+  organization_id:
+    format: ID
+
+  owner_id:
+    format: ID
+
+measures:
+  count:
+    aggregate_type: count

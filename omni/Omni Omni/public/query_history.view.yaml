@@ -1,0 +1,19 @@
+# Reference this view as query_history
+schema: public
+
+dimensions:
+  created_at: {}
+
+  id:
+    format: ID
+    primary_key: true
+
+  membership_id:
+    format: ID
+
+  query_id:
+    format: ID
+
+measures:
+  count:
+    aggregate_type: count

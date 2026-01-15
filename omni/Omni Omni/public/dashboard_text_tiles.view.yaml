@@ -1,0 +1,17 @@
+# Reference this view as dashboard_text_tiles
+schema: public
+
+dimensions:
+  created_at: {}
+  content: {}
+
+  id:
+    format: ID
+    primary_key: true
+
+  organization_id:
+    format: ID
+
+measures:
+  count:
+    aggregate_type: count

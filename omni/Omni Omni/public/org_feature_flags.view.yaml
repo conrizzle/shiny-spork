@@ -1,0 +1,21 @@
+# Reference this view as org_feature_flags
+schema: public
+
+dimensions:
+  created_at: {}
+  updated_at: {}
+  enabled: {}
+  meta: {}
+  meta_version: {}
+  name: {}
+
+  id:
+    format: ID
+    primary_key: true
+
+  organization_id:
+    format: ID
+
+measures:
+  count:
+    aggregate_type: count

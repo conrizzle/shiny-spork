@@ -1,0 +1,64 @@
+# Reference this view as permit_history_entries
+schema: public
+
+dimensions:
+  role: {}
+  user_permissions_override: {}
+  created_at: {}
+  revoked_at: {}
+  scope: {}
+  can_analyze: {}
+  can_download: {}
+  can_drill: {}
+  can_schedule: {}
+  expires_at: {}
+  act: {}
+  can_upload: {}
+  can_view_workbook: {}
+
+  id:
+    format: ID
+    primary_key: true
+
+  organization_id:
+    format: ID
+
+  created_by_id:
+    format: ID
+
+  owner_id:
+    format: ID
+
+  workbook_id:
+    format: ID
+
+  folder_id:
+    format: ID
+
+  user_id:
+    format: ID
+
+  user_group_id:
+    format: ID
+
+  document_permit_id:
+    format: ID
+
+  document_user_permit_id:
+    format: ID
+
+  document_group_permit_id:
+    format: ID
+
+  folder_permit_id:
+    format: ID
+
+  folder_user_permit_id:
+    format: ID
+
+  folder_group_permit_id:
+    format: ID
+
+measures:
+  count:
+    aggregate_type: count

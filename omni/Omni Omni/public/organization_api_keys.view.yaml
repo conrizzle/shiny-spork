@@ -1,0 +1,22 @@
+# Reference this view as organization_api_keys
+schema: public
+
+dimensions:
+  name: {}
+  created_at: {}
+  secret_hashed: {}
+  enabled: {}
+
+  id:
+    format: ID
+    primary_key: true
+
+  organization_id:
+    format: ID
+
+  created_by_id:
+    format: ID
+
+measures:
+  count:
+    aggregate_type: count

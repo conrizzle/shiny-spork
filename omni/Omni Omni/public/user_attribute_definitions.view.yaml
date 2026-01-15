@@ -1,0 +1,21 @@
+# Reference this view as user_attribute_definitions
+schema: public
+
+dimensions:
+  label: {}
+  name: {}
+  type: {}
+  multiple_values: {}
+  value: {}
+  description: {}
+
+  id:
+    format: ID
+    primary_key: true
+
+  organization_id:
+    format: ID
+
+measures:
+  count:
+    aggregate_type: count

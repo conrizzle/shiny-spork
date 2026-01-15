@@ -1,0 +1,47 @@
+# Reference this view as workbooks
+schema: public
+
+dimensions:
+  created_at: {}
+  updated_at: {}
+  ephemeral: {}
+  identifier: {}
+  last_item_index: {}
+  name: {}
+  organization_role: {}
+  organization_user_permissions_override: {}
+  public_role: {}
+  public_user_permissions_override: {}
+  deleted_at: {}
+  organization_can_analyze: {}
+  organization_can_download: {}
+  organization_can_drill: {}
+  organization_can_schedule: {}
+  is_draft: {}
+  organization_can_view_workbook: {}
+  published_at: {}
+  organization_can_upload: {}
+  metadata: {}
+
+  id:
+    format: ID
+    primary_key: true
+
+  organization_id:
+    format: ID
+
+  creator_id:
+    format: ID
+
+  updater_id:
+    format: ID
+
+  folder_id:
+    format: ID
+
+  origin_document_id:
+    format: ID
+
+measures:
+  count:
+    aggregate_type: count

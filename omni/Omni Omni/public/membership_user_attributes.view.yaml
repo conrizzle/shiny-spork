@@ -1,0 +1,22 @@
+# Reference this view as membership_user_attributes
+schema: public
+
+dimensions:
+  value: {}
+
+  id:
+    format: ID
+    primary_key: true
+
+  organization_id:
+    format: ID
+
+  membership_id:
+    format: ID
+
+  user_attribute_definition_id:
+    format: ID
+
+measures:
+  count:
+    aggregate_type: count

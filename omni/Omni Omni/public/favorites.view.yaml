@@ -1,0 +1,27 @@
+# Reference this view as favorites
+schema: public
+
+dimensions:
+  created_at: {}
+  updated_at: {}
+
+  organization_id:
+    format: ID
+
+  user_id:
+    sql: '"userId"'
+    format: ID
+
+  workbook_id:
+    sql: '"workbookId"'
+    format: ID
+
+measures:
+  count:
+    aggregate_type: count
+custom_compound_primary_key_sql:
+  [
+    "${favorites.organization_id}",
+    "${favorites.user_id}",
+    "${favorites.workbook_id}"
+  ]

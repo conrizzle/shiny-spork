@@ -1,0 +1,19 @@
+# Reference this view as looker_model_explores
+schema: public
+
+dimensions:
+  created_at: {}
+  updated_at: {}
+  name: {}
+  migrated: {}
+
+  id:
+    format: ID
+    primary_key: true
+
+  looker_model_id:
+    format: ID
+
+measures:
+  count:
+    aggregate_type: count

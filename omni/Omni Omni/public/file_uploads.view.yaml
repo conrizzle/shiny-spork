@@ -1,0 +1,36 @@
+# Reference this view as file_uploads
+schema: public
+
+dimensions:
+  created_at: {}
+  updated_at: {}
+  file_name: {}
+  view_name: {}
+  file_path: {}
+  deleted_at: {}
+  size_bytes: {}
+  in_db_as_table_name: {}
+  column_and_arrow_type_names_json: {}
+
+  id:
+    format: ID
+    primary_key: true
+
+  organization_id:
+    format: ID
+
+  connection_id:
+    format: ID
+
+  uploaded_by_user_id:
+    format: ID
+
+  original_id:
+    format: ID
+
+  private_to_workbook_model_id:
+    format: ID
+
+measures:
+  count:
+    aggregate_type: count

@@ -1,0 +1,17 @@
+# Reference this view as vanity_domains
+schema: public
+
+dimensions:
+  created_at: {}
+  domain: {}
+
+  id:
+    format: ID
+    primary_key: true
+
+  organization_id:
+    format: ID
+
+measures:
+  count:
+    aggregate_type: count

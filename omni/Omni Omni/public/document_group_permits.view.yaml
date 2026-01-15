@@ -1,0 +1,34 @@
+# Reference this view as document_group_permits
+schema: public
+
+dimensions:
+  role: {}
+  user_permissions_override: {}
+  created_at: {}
+  can_analyze: {}
+  can_download: {}
+  can_drill: {}
+  can_schedule: {}
+  expires_at: {}
+  can_upload: {}
+  can_view_workbook: {}
+
+  id:
+    format: ID
+    primary_key: true
+
+  workbook_id:
+    format: ID
+
+  user_group_id:
+    format: ID
+
+  organization_id:
+    format: ID
+
+  created_by_id:
+    format: ID
+
+measures:
+  count:
+    aggregate_type: count

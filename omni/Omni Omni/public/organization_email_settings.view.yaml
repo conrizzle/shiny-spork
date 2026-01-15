@@ -1,0 +1,19 @@
+# Reference this view as organization_email_settings
+schema: public
+
+dimensions:
+  created_at: {}
+  updated_at: {}
+  sender_name: {}
+  sender_username: {}
+
+  id:
+    format: ID
+    primary_key: true
+
+  organization_id:
+    format: ID
+
+measures:
+  count:
+    aggregate_type: count
