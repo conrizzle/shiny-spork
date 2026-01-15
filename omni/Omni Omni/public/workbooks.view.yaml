@@ -4,7 +4,6 @@ schema: public
 dimensions:
   created_at: {}
   updated_at: {}
-  ephemeral: {}
   identifier: {}
   last_item_index: {}
   name: {}
@@ -22,6 +21,9 @@ dimensions:
   published_at: {}
   organization_can_upload: {}
   metadata: {}
+
+  ephemeral:
+    label: ephemeral
 
   id:
     format: ID
