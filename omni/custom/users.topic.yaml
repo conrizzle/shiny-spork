@@ -1,0 +1,5 @@
+always_where_sql: |
+  'bob' IN ({{ omni_attributes.omni_user_groups }})
+
+# this is the users topic
+joins: {}

@@ -1,0 +1,20 @@
+# Reference this view as all_types__character_types
+schema: all_types
+table_name: character_types
+
+dimensions:
+  some_character: {}
+  some_char: {}
+  some_character_varying: {}
+  some_varchar: {}
+  some_text: {}
+  some_xml: {}
+  some_jsonb: {}
+
+  some_json:
+    label: parent blah
+    skip_parent_label: true
+
+measures:
+  count:
+    aggregate_type: count
