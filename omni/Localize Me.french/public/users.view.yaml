@@ -6,10 +6,10 @@ dimensions:
     label: Prénom
 
   last_name:
-    label: Nom
+    label: Nom Nom Nom
 
   email:
-    label: Courriel
+    label: Courriel CCC
 
   age:
     label: Âge
