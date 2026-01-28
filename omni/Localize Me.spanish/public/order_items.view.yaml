@@ -1,0 +1,20 @@
+# Reference this view as order_items
+label: Artículos del pedido
+
+dimensions:
+  quantity:
+    label: Cantidad
+
+  id:
+    label: Identificador
+
+  order_id:
+    label: ID del pedido
+
+  inventory_item_id:
+    label: ID del artículo en inventario
+
+measures:
+  count:
+    label: Conteo
+    aggregate_type: count

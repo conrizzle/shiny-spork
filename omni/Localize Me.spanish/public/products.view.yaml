@@ -1,0 +1,32 @@
+# Reference this view as products
+label: Productos
+
+dimensions:
+  category:
+    label: Categoría
+
+  name:
+    label: Nombre
+
+  brand:
+    label: Marca
+
+  retail_price:
+    label: Precio de venta
+
+  department:
+    label: Departamento
+
+  sku:
+    label: SKU
+
+  id:
+    label: Identificador
+
+  distribution_center_id:
+    label: Centro de distribución
+
+measures:
+  count:
+    label: Conteo
+    aggregate_type: count

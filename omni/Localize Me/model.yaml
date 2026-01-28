@@ -1,0 +1,9 @@
+dynamic_shared_extensions:
+  - user_attribute: locale
+    mappings:
+      french:
+        values_for_model: [ fr_CA, fr, fr_FR ]
+      spanish:
+        values_for_model: [ es_MX, es_ES, es ]
+
+included_schemas: [ public ]

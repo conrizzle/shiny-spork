@@ -1,0 +1,19 @@
+# Reference this view as inventory_items
+schema: public
+
+dimensions:
+  created_at: {}
+  sold_at: {}
+  cost: {}
+
+  id:
+    format: ID
+    primary_key: true
+
+  product_id:
+    label: Product Id Label
+    format: ID
+
+measures:
+  count:
+    aggregate_type: count
