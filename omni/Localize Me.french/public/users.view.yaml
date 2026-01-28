@@ -9,7 +9,7 @@ dimensions:
     label: Nom Nom Nom
 
   email:
-    label: Courriel
+    label: Courriel CCC
 
   age:
     label: Âge
