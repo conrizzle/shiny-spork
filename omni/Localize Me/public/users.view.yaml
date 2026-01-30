@@ -16,7 +16,7 @@ dimensions:
   traffic_source: {}
 
   last_name:
-    label: last
+    label: last last
 
   id:
     format: ID
