@@ -14,9 +14,7 @@ dimensions:
   gender: {}
   created_at: {}
   traffic_source: {}
-
-  last_name:
-    label: last
+  last_name: {}
 
   id:
     format: ID
