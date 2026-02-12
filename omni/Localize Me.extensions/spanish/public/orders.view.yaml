@@ -1,0 +1,23 @@
+# Reference this view as orders
+label: Pedidos
+
+dimensions:
+  status:
+    label: Estado
+
+  created_at:
+    label: Fecha de creación
+
+  id:
+    label: Identificador
+
+  user_id:
+    label: ID de usuario
+
+  seller_id:
+    label: ID del vendedor
+
+measures:
+  count:
+    label: Conteo
+    aggregate_type: count

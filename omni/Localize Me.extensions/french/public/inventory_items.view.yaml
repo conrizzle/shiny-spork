@@ -1,0 +1,23 @@
+# Reference this view as inventory_items
+label: Articles en inventaire
+
+dimensions:
+  created_at:
+    label: Créé leee
+
+  sold_at:
+    label: Vendu le
+
+  cost:
+    label: still do not know french
+
+  id:
+    label: Identifiant
+
+  product_id:
+    label: Identifiant du produit
+
+measures:
+  count:
+    label: Compte
+    aggregate_type: count

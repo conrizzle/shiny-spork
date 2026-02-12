@@ -1,0 +1,23 @@
+# Reference this view as inventory_items
+label: Artículos en inventario
+
+dimensions:
+  created_at:
+    label: Creado el
+
+  sold_at:
+    label: Vendido el
+
+  cost:
+    label: Costo
+
+  id:
+    label: Identificador
+
+  product_id:
+    label: ID del producto
+
+measures:
+  count:
+    label: Conteo
+    aggregate_type: count
