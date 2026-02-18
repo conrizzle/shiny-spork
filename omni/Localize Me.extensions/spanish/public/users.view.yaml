@@ -3,7 +3,7 @@ label: Usuarios
 
 dimensions:
   first_name:
-    label: Nombre Nom
+    label: Nombre No
 
   last_name:
     label: Apellido Apellido
