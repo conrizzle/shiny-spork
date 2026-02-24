@@ -14,9 +14,7 @@ dimensions:
   created_at: {}
   traffic_source: {}
   last_name: {}
-
-  first_name:
-    label: first name
+  first_name: {}
 
   id:
     format: ID
