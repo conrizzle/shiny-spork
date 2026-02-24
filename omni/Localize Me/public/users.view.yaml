@@ -2,7 +2,6 @@
 schema: public
 
 dimensions:
-  first_name: {}
   email: {}
   age: {}
   city: {}
@@ -15,6 +14,9 @@ dimensions:
   created_at: {}
   traffic_source: {}
   last_name: {}
+
+  first_name:
+    label: first
 
   id:
     format: ID
