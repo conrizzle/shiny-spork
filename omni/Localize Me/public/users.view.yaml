@@ -16,7 +16,7 @@ dimensions:
   last_name: {}
 
   first_name:
-    label: first
+    label: firstly
 
   id:
     format: ID
