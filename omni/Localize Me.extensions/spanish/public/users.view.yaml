@@ -6,7 +6,7 @@ dimensions:
     label: Nombre
 
   last_name:
-    label: Apellido Apellido
+    label: Apellido Apellidoooo
 
   email:
     label: Correo electrónico
