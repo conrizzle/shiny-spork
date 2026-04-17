@@ -16,7 +16,7 @@ dimensions:
   last_name: {}
 
   first_name:
-    label: shared first name
+    label: shared first names
 
   id:
     format: ID
