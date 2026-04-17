@@ -3,7 +3,7 @@ label: Back to Users
 
 dimensions:
   first_name:
-    label: Prénomddss
+    label: Prénomdd
 
   last_name:
     label: Nom
