@@ -1,0 +1,16 @@
+# this is the order_items topic
+fields:
+  [
+    order_items.*,
+    -order_items.count,
+    users.*,
+    -users.age,
+    users.gender,
+    users.traffic_source
+  ]
+
+joins:
+  orders:
+    users: {}
+  inventory_items:
+    products: {}

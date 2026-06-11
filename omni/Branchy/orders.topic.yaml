@@ -1,0 +1,5 @@
+# this is the orders topic
+base_view: orders
+
+joins:
+  users: {}

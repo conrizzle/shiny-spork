@@ -15,8 +15,7 @@ dimensions:
   gender: {}
   created_at: {}
   traffic_source: {}
-  test3: {}
-  test4: {}
+  conf1: {}
 
   id:
     format: ID

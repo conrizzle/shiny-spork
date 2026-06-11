@@ -1,0 +1,10 @@
+# Reference this view as all_types__min_binary_types
+schema: all_types
+table_name: min_binary_types
+
+dimensions:
+  some_bit: {}
+
+measures:
+  count:
+    aggregate_type: count

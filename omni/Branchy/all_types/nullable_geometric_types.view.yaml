@@ -1,0 +1,16 @@
+# Reference this view as all_types__nullable_geometric_types
+schema: all_types
+table_name: nullable_geometric_types
+
+dimensions:
+  some_point: {}
+  some_line: {}
+  some_lseg: {}
+  some_box: {}
+  some_path: {}
+  some_polygon: {}
+  some_circle: {}
+
+measures:
+  count:
+    aggregate_type: count

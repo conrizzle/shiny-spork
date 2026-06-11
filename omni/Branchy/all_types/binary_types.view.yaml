@@ -1,0 +1,14 @@
+# Reference this view as all_types__binary_types
+schema: all_types
+table_name: binary_types
+
+dimensions:
+  some_bit: {}
+  some_bit_varying: {}
+  some_bytea: {}
+  some_bool: {}
+  some_uuid: {}
+
+measures:
+  count:
+    aggregate_type: count
