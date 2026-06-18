@@ -1,1 +1,1 @@
-included_schemas: [ ds, all_types, public, sales ]
+included_schemas: [ trivial, ds, all_types, public, sales ]
