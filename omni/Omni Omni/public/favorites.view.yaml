@@ -19,6 +19,7 @@ dimensions:
 measures:
   count:
     aggregate_type: count
+
 custom_compound_primary_key_sql:
   [
     "${favorites.organization_id}",
