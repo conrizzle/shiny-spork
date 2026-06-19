@@ -1,0 +1,321 @@
+{
+  "containers": [
+    {
+      "children": [],
+      "direction": "row",
+      "instanceKey": "filter-bar",
+      "containerType": "stack"
+    },
+    {
+      "name": "Page 1",
+      "container": {
+        "name": "Page layout",
+        "children": [
+          {
+            "name": "⚡️🍣 Query",
+            "style": "tile",
+            "children": [
+              {
+                "as": "metadata",
+                "id": "1",
+                "type": "query",
+                "format": "name",
+                "padding": [
+                  0,
+                  0,
+                  2,
+                  0
+                ],
+                "instanceKey": "01KVCPFQW2MXKPC68VNRCJ4H9D"
+              },
+              {
+                "id": "1",
+                "type": "query",
+                "instanceKey": "01KVCPFQW2DPBFTXJW6F3JCW80"
+              }
+            ],
+            "metadata": {
+              "attachedQueryKey": "1"
+            },
+            "instanceKey": "01KVCPFQW2J1HHG3AQXY1FYHXE",
+            "gridPosition": {
+              "h": 51,
+              "w": 12,
+              "x": 0,
+              "y": 0
+            },
+            "containerType": "stack"
+          },
+          {
+            "name": "🥬 Query",
+            "style": "tile",
+            "children": [
+              {
+                "as": "metadata",
+                "id": "2",
+                "type": "query",
+                "format": "name",
+                "padding": [
+                  0,
+                  0,
+                  2,
+                  0
+                ],
+                "instanceKey": "01KVCPKFFWTG5ADFV0GEWRWG3M"
+              },
+              {
+                "id": "2",
+                "type": "query",
+                "instanceKey": "01KVCPKFFWYJ4RR3YR6JM1K9PJ"
+              }
+            ],
+            "metadata": {
+              "attachedQueryKey": "2"
+            },
+            "instanceKey": "01KVCPKFFWXP24B7HQ7T9ZN7TM",
+            "gridPosition": {
+              "h": 51,
+              "w": 12,
+              "x": 0,
+              "y": 51
+            },
+            "containerType": "stack"
+          }
+        ],
+        "instanceKey": "01KVCPFQW2CGDRBDKE0ECP966T",
+        "containerType": "grid"
+      },
+      "instanceKey": "01KVCPFQW26P5XPN3MVX1YAT52",
+      "containerType": "page"
+    }
+  ],
+  "controls": {
+    "data": {},
+    "order": []
+  },
+  "settings": {
+    "crossfilterEnabled": false,
+    "customText": null,
+    "facetFilters": false,
+    "refreshInterval": null,
+    "runQueriesOn": null
+  },
+  "description": "Bar chart showing user distribution across age groups, filtered by gender and sorted by count. Provides demographic breakdown of active users.",
+  "name": "age count fun",
+  "queryPresentations": {
+    "data": {
+      "1": {
+        "aiConfig": null,
+        "automaticVis": true,
+        "description": "",
+        "filterOrder": [
+          "users.age"
+        ],
+        "isSql": false,
+        "name": "⚡️🍣 Query",
+        "prefersChart": true,
+        "resultConfig": {
+          "tableType": "spreadsheet",
+          "rowBanding": {
+            "enabled": false,
+            "bandSize": 1
+          },
+          "expandedRows": {},
+          "columnFormats": {
+            "users.age": {
+              "align": "right"
+            },
+            "users.count": {
+              "align": "right"
+            },
+            "users.gender": {
+              "align": "left"
+            }
+          },
+          "hideIndexColumn": false,
+          "truncateHeaders": true,
+          "showDescriptions": true,
+          "visColumnDisplay": "hide-view-name"
+        },
+        "subTitle": null,
+        "topicName": "users",
+        "type": "query",
+        "visConfig": {
+          "chartType": null,
+          "fields": [
+            "users.age",
+            "users.gender",
+            "users.count"
+          ],
+          "version": 0,
+          "visConfig": {
+            "x": {
+              "field": {
+                "name": "users.age"
+              }
+            },
+            "mark": {
+              "type": "bar"
+            },
+            "color": {
+              "field": {
+                "name": "users.gender"
+              },
+              "_stack": "stack"
+            },
+            "series": [
+              {
+                "field": {
+                  "name": "users.count"
+                },
+                "yAxis": "y"
+              }
+            ],
+            "tooltip": [
+              {
+                "field": {
+                  "name": "users.age"
+                }
+              },
+              {
+                "field": {
+                  "name": "users.count"
+                }
+              },
+              {
+                "field": {
+                  "name": "users.gender"
+                }
+              }
+            ],
+            "version": 0,
+            "behaviors": {
+              "stackMultiMark": false
+            },
+            "configType": "cartesian",
+            "_dependentAxis": "y",
+            "visType": "basic"
+          }
+        },
+        "query": {
+          "limit": 2000,
+          "sorts": [
+            {
+              "column_name": "users.count",
+              "sort_descending": true
+            }
+          ],
+          "table": "users",
+          "fields": [
+            "users.age",
+            "users.gender",
+            "users.count"
+          ],
+          "pivots": [],
+          "dbtMode": false,
+          "filters": {
+            "users.age": {
+              "kind": "LESS_THAN",
+              "type": "number",
+              "values": [
+                "35"
+              ],
+              "is_negative": false,
+              "is_inclusive": false
+            }
+          },
+          "version": 9,
+          "controls": [],
+          "rewriteSql": true,
+          "row_totals": {},
+          "fill_fields": [],
+          "calculations": [],
+          "column_limit": 50,
+          "join_via_map": {},
+          "column_totals": {},
+          "userEditedSQL": "",
+          "dimensionIndex": 2,
+          "default_group_by": true,
+          "custom_summary_types": {},
+          "join_paths_from_topic_name": "users"
+        },
+        "sourceQueryPresentationKey": null
+      },
+      "2": {
+        "aiConfig": null,
+        "automaticVis": false,
+        "description": "",
+        "filterOrder": [
+          "users.gender"
+        ],
+        "isSql": false,
+        "name": "🥬 Query",
+        "prefersChart": false,
+        "resultConfig": {
+          "tableType": "spreadsheet",
+          "rowBanding": {
+            "enabled": false,
+            "bandSize": 1
+          },
+          "expandedRows": {},
+          "hideIndexColumn": false,
+          "truncateHeaders": true,
+          "showDescriptions": true,
+          "visColumnDisplay": "hide-view-name"
+        },
+        "subTitle": null,
+        "topicName": "users",
+        "type": "query",
+        "visConfig": {
+          "chartType": null,
+          "fields": [],
+          "version": 0,
+          "visConfig": {
+            "visType": null
+          }
+        },
+        "query": {
+          "limit": 2000,
+          "sorts": [
+            {
+              "column_name": "users.count",
+              "sort_descending": true
+            }
+          ],
+          "table": "users",
+          "fields": [
+            "users.city",
+            "users.count"
+          ],
+          "pivots": [],
+          "dbtMode": false,
+          "filters": {
+            "users.gender": {
+              "type": "user_attribute",
+              "user_attribute_name": "unfiltered"
+            }
+          },
+          "version": 9,
+          "controls": [],
+          "rewriteSql": true,
+          "row_totals": {},
+          "fill_fields": [],
+          "calculations": [],
+          "column_limit": 50,
+          "join_via_map": {},
+          "column_totals": {},
+          "userEditedSQL": "",
+          "dimensionIndex": 1,
+          "default_group_by": true,
+          "custom_summary_types": {},
+          "join_paths_from_topic_name": "users"
+        },
+        "sourceQueryPresentationKey": null
+      }
+    },
+    "order": [
+      "1",
+      "2"
+    ]
+  }
+}
