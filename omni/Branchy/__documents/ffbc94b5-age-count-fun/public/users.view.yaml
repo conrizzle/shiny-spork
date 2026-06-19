@@ -1,0 +1,5 @@
+# Reference this view as users
+measures:
+  state_list:
+    sql: ${users.state}
+    aggregate_type: list
