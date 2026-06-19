@@ -24,3 +24,7 @@ dimensions:
 measures:
   count:
     aggregate_type: count
+
+  state_list:
+    sql: ${users.state}
+    aggregate_type: list
