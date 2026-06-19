@@ -281,14 +281,15 @@
           "limit": 2000,
           "sorts": [
             {
-              "column_name": "users.count",
+              "column_name": "users.state_list",
               "sort_descending": true
             }
           ],
           "table": "users",
           "fields": [
             "users.city",
-            "users.count"
+            "users.count",
+            "users.state_list"
           ],
           "pivots": [],
           "dbtMode": false,
