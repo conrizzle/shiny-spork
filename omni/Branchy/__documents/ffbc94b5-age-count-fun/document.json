@@ -275,7 +275,8 @@
           "fields": [
             "users.age",
             "users.count",
-            "users.state_list"
+            "users.state_list",
+            "users.city_count_distinct"
           ],
           "fill_fields": [
           ],
@@ -296,7 +297,7 @@
           },
           "sorts": [
             {
-              "column_name": "users.state_list",
+              "column_name": "users.city_count_distinct",
               "sort_descending": true
             }
           ],
