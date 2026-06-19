@@ -1,104 +1,100 @@
 {
   "containers": [
     {
-      "children": [],
+      "children": [
+      ],
+      "containerType": "stack",
       "direction": "row",
-      "instanceKey": "filter-bar",
-      "containerType": "stack"
+      "instanceKey": "filter-bar"
     },
     {
-      "name": "Page 1",
       "container": {
-        "name": "Page layout",
         "children": [
           {
-            "name": "⚡️🍣 Query",
-            "style": "tile",
             "children": [
               {
                 "as": "metadata",
-                "id": "1",
-                "type": "query",
                 "format": "name",
+                "id": "1",
+                "instanceKey": "01KVCPFQW2MXKPC68VNRCJ4H9D",
                 "padding": [
                   0,
                   0,
                   2,
                   0
                 ],
-                "instanceKey": "01KVCPFQW2MXKPC68VNRCJ4H9D"
+                "type": "query"
               },
               {
                 "id": "1",
-                "type": "query",
-                "instanceKey": "01KVCPFQW2DPBFTXJW6F3JCW80"
+                "instanceKey": "01KVCPFQW2DPBFTXJW6F3JCW80",
+                "type": "query"
               }
             ],
-            "metadata": {
-              "attachedQueryKey": "1"
-            },
-            "instanceKey": "01KVCPFQW2J1HHG3AQXY1FYHXE",
+            "containerType": "stack",
             "gridPosition": {
               "h": 51,
               "w": 12,
               "x": 0,
               "y": 0
             },
-            "containerType": "stack"
+            "instanceKey": "01KVCPFQW2J1HHG3AQXY1FYHXE",
+            "metadata": {
+              "attachedQueryKey": "1"
+            },
+            "name": "⚡️🍣 Query",
+            "style": "tile"
           },
           {
-            "name": "🥬 Query",
-            "style": "tile",
             "children": [
               {
                 "as": "metadata",
-                "id": "2",
-                "type": "query",
                 "format": "name",
+                "id": "2",
+                "instanceKey": "01KVCPKFFWTG5ADFV0GEWRWG3M",
                 "padding": [
                   0,
                   0,
                   2,
                   0
                 ],
-                "instanceKey": "01KVCPKFFWTG5ADFV0GEWRWG3M"
+                "type": "query"
               },
               {
                 "id": "2",
-                "type": "query",
-                "instanceKey": "01KVCPKFFWYJ4RR3YR6JM1K9PJ"
+                "instanceKey": "01KVCPKFFWYJ4RR3YR6JM1K9PJ",
+                "type": "query"
               }
             ],
-            "metadata": {
-              "attachedQueryKey": "2"
-            },
-            "instanceKey": "01KVCPKFFWXP24B7HQ7T9ZN7TM",
+            "containerType": "stack",
             "gridPosition": {
               "h": 51,
               "w": 12,
               "x": 0,
               "y": 51
             },
-            "containerType": "stack"
+            "instanceKey": "01KVCPKFFWXP24B7HQ7T9ZN7TM",
+            "metadata": {
+              "attachedQueryKey": "2"
+            },
+            "name": "🥬 Query",
+            "style": "tile"
           }
         ],
+        "containerType": "grid",
         "instanceKey": "01KVCPFQW2CGDRBDKE0ECP966T",
-        "containerType": "grid"
+        "name": "Page layout"
       },
+      "containerType": "page",
       "instanceKey": "01KVCPFQW26P5XPN3MVX1YAT52",
-      "containerType": "page"
+      "name": "Page 1"
     }
   ],
   "controls": {
-    "data": {},
-    "order": []
-  },
-  "settings": {
-    "crossfilterEnabled": false,
-    "customText": null,
-    "facetFilters": false,
-    "refreshInterval": null,
-    "runQueriesOn": null
+    "data": {
+    },
+    "order": [
+    ]
   },
   "description": "Bar chart showing user distribution across age groups, filtered by gender and sorted by count. Provides demographic breakdown of active users.",
   "name": "age count fun",
@@ -114,13 +110,57 @@
         "isSql": false,
         "name": "⚡️🍣 Query",
         "prefersChart": true,
-        "resultConfig": {
-          "tableType": "spreadsheet",
-          "rowBanding": {
-            "enabled": false,
-            "bandSize": 1
+        "query": {
+          "calculations": [
+          ],
+          "column_limit": 50,
+          "column_totals": {
           },
-          "expandedRows": {},
+          "controls": [
+          ],
+          "custom_summary_types": {
+          },
+          "dbtMode": false,
+          "default_group_by": true,
+          "dimensionIndex": 2,
+          "fields": [
+            "users.age",
+            "users.gender",
+            "users.count"
+          ],
+          "fill_fields": [
+          ],
+          "filters": {
+            "users.age": {
+              "is_inclusive": false,
+              "is_negative": false,
+              "kind": "LESS_THAN",
+              "type": "number",
+              "values": [
+                "30"
+              ]
+            }
+          },
+          "join_paths_from_topic_name": "users",
+          "join_via_map": {
+          },
+          "limit": 2000,
+          "pivots": [
+          ],
+          "rewriteSql": true,
+          "row_totals": {
+          },
+          "sorts": [
+            {
+              "column_name": "users.count",
+              "sort_descending": true
+            }
+          ],
+          "table": "users",
+          "userEditedSQL": "",
+          "version": 9
+        },
+        "resultConfig": {
           "columnFormats": {
             "users.age": {
               "align": "right"
@@ -128,18 +168,26 @@
             "users.count": {
               "align": "right"
             },
-            "users.state": {
+            "users.gender": {
               "align": "left"
             },
-            "users.gender": {
+            "users.state": {
               "align": "left"
             }
           },
+          "expandedRows": {
+          },
           "hideIndexColumn": false,
-          "truncateHeaders": true,
+          "rowBanding": {
+            "bandSize": 1,
+            "enabled": false
+          },
           "showDescriptions": true,
+          "tableType": "spreadsheet",
+          "truncateHeaders": true,
           "visColumnDisplay": "hide-view-name"
         },
+        "sourceQueryPresentationKey": null,
         "subTitle": null,
         "topicName": "users",
         "type": "query",
@@ -152,19 +200,19 @@
           ],
           "version": 0,
           "visConfig": {
-            "x": {
-              "field": {
-                "name": "users.age"
-              }
-            },
-            "mark": {
-              "type": "bar"
+            "_dependentAxis": "y",
+            "behaviors": {
+              "stackMultiMark": false
             },
             "color": {
+              "_stack": "stack",
               "field": {
                 "name": "users.gender"
-              },
-              "_stack": "stack"
+              }
+            },
+            "configType": "cartesian",
+            "mark": {
+              "type": "bar"
             },
             "series": [
               {
@@ -192,57 +240,14 @@
               }
             ],
             "version": 0,
-            "behaviors": {
-              "stackMultiMark": false
-            },
-            "configType": "cartesian",
-            "_dependentAxis": "y",
-            "visType": "basic"
+            "visType": "basic",
+            "x": {
+              "field": {
+                "name": "users.age"
+              }
+            }
           }
-        },
-        "query": {
-          "limit": 2000,
-          "sorts": [
-            {
-              "column_name": "users.count",
-              "sort_descending": true
-            }
-          ],
-          "table": "users",
-          "fields": [
-            "users.age",
-            "users.gender",
-            "users.count"
-          ],
-          "pivots": [],
-          "dbtMode": false,
-          "filters": {
-            "users.age": {
-              "kind": "LESS_THAN",
-              "type": "number",
-              "values": [
-                "30"
-              ],
-              "is_negative": false,
-              "is_inclusive": false
-            }
-          },
-          "version": 9,
-          "controls": [],
-          "rewriteSql": true,
-          "row_totals": {},
-          "fill_fields": [],
-          "calculations": [],
-          "column_limit": 50,
-          "join_via_map": {},
-          "column_totals": {},
-          "userEditedSQL": "",
-          "dimensionIndex": 2,
-          "default_group_by": true,
-          "custom_summary_types": {},
-          "join_paths_from_topic_name": "users"
-        },
-        "sourceQueryPresentationKey": null
+        }
       },
       "2": {
         "aiConfig": null,
@@ -254,72 +259,90 @@
         "isSql": false,
         "name": "🥬 Query",
         "prefersChart": false,
-        "resultConfig": {
-          "tableType": "spreadsheet",
-          "rowBanding": {
-            "enabled": false,
-            "bandSize": 1
-          },
-          "expandedRows": {},
-          "hideIndexColumn": false,
-          "truncateHeaders": true,
-          "showDescriptions": true,
-          "visColumnDisplay": "hide-view-name"
-        },
-        "subTitle": null,
-        "topicName": "users",
-        "type": "query",
-        "visConfig": {
-          "chartType": null,
-          "fields": [],
-          "version": 0,
-          "visConfig": {
-            "visType": null
-          }
-        },
         "query": {
-          "limit": 2000,
-          "sorts": [
-            {
-              "column_name": "users.state_list",
-              "sort_descending": true
-            }
+          "calculations": [
           ],
-          "table": "users",
+          "column_limit": 50,
+          "column_totals": {
+          },
+          "controls": [
+          ],
+          "custom_summary_types": {
+          },
+          "dbtMode": false,
+          "default_group_by": true,
+          "dimensionIndex": 1,
           "fields": [
             "users.city",
             "users.count",
-            "users.state_list"
+            "users.state_list",
+            "users.age_average"
           ],
-          "pivots": [],
-          "dbtMode": false,
+          "fill_fields": [
+          ],
           "filters": {
             "users.gender": {
               "type": "user_attribute",
               "user_attribute_name": "unfiltered"
             }
           },
-          "version": 9,
-          "controls": [],
+          "join_paths_from_topic_name": "users",
+          "join_via_map": {
+          },
+          "limit": 2000,
+          "pivots": [
+          ],
           "rewriteSql": true,
-          "row_totals": {},
-          "fill_fields": [],
-          "calculations": [],
-          "column_limit": 50,
-          "join_via_map": {},
-          "column_totals": {},
+          "row_totals": {
+          },
+          "sorts": [
+            {
+              "column_name": "users.age_average",
+              "sort_descending": true
+            }
+          ],
+          "table": "users",
           "userEditedSQL": "",
-          "dimensionIndex": 1,
-          "default_group_by": true,
-          "custom_summary_types": {},
-          "join_paths_from_topic_name": "users"
+          "version": 9
         },
-        "sourceQueryPresentationKey": null
+        "resultConfig": {
+          "expandedRows": {
+          },
+          "hideIndexColumn": false,
+          "rowBanding": {
+            "bandSize": 1,
+            "enabled": false
+          },
+          "showDescriptions": true,
+          "tableType": "spreadsheet",
+          "truncateHeaders": true,
+          "visColumnDisplay": "hide-view-name"
+        },
+        "sourceQueryPresentationKey": null,
+        "subTitle": null,
+        "topicName": "users",
+        "type": "query",
+        "visConfig": {
+          "chartType": null,
+          "fields": [
+          ],
+          "version": 0,
+          "visConfig": {
+            "visType": null
+          }
+        }
       }
     },
     "order": [
       "1",
       "2"
     ]
+  },
+  "settings": {
+    "crossfilterEnabled": false,
+    "customText": null,
+    "facetFilters": false,
+    "refreshInterval": null,
+    "runQueriesOn": null
   }
 }
