@@ -1,7 +1,4 @@
 default_row_limit: 2000
-default_filters:
-  users.gender:
-    user_attribute: unfiltered
 
 # this is the users topic
 joins: {}
