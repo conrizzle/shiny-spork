@@ -1,0 +1,4 @@
+# Reference this view as inventory_items
+dimensions:
+  product_id:
+    label: Product Id Label
