@@ -1,0 +1,7 @@
+# Reference this view as users
+dimensions:
+  last_name:
+    label: last
+
+  first_name:
+    label: first
