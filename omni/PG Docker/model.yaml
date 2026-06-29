@@ -1,1 +1,1 @@
-included_schemas: [ public ]
+included_schemas: [ boo, public ]
