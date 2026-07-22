@@ -1,6 +1,7 @@
 # Reference this view as users
 schema: public
 
+# test signing take two
 dimensions:
   first_name: {}
   last_name: {}
