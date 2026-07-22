@@ -1,4 +1,4 @@
-# Reference this view as users
+# Reference this view as users_with_recent_timestamps
 schema: public
 
 dimensions:
@@ -13,8 +13,8 @@ dimensions:
   latitude: {}
   longitude: {}
   gender: {}
-  created_at: {}
   traffic_source: {}
+  created_at: {}
 
   id:
     format: ID

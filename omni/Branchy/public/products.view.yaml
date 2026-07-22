@@ -8,7 +8,6 @@ dimensions:
   retail_price: {}
   department: {}
   sku: {}
-  conf2: {}
 
   id:
     format: ID
