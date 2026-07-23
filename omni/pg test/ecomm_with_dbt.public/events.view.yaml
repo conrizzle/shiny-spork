@@ -1,0 +1,38 @@
+# Reference this view as ecomm_with_dbt_public__events
+catalog: ecomm_with_dbt
+schema: public
+table_name: events
+
+dimensions:
+  sequence_number: {}
+  created_at: {}
+  ip_address: {}
+  city: {}
+  state: {}
+  country: {}
+  zip: {}
+  latitude: {}
+  longitude: {}
+  os: {}
+  browser: {}
+  traffic_source: {}
+  uri: {}
+  event_type: {}
+  referrer_code: {}
+
+  id:
+    format: ID
+    primary_key: true
+
+  session_id:
+    format: ID
+
+  user_id:
+    format: ID
+
+  ad_event_id:
+    format: ID
+
+measures:
+  count:
+    aggregate_type: count

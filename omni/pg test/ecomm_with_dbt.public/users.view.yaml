@@ -1,0 +1,27 @@
+# Reference this view as ecomm_with_dbt_public__users
+catalog: ecomm_with_dbt
+schema: public
+table_name: users
+
+dimensions:
+  first_name: {}
+  last_name: {}
+  email: {}
+  age: {}
+  city: {}
+  state: {}
+  country: {}
+  zip: {}
+  latitude: {}
+  longitude: {}
+  gender: {}
+  created_at: {}
+  traffic_source: {}
+
+  id:
+    format: ID
+    primary_key: true
+
+measures:
+  count:
+    aggregate_type: count

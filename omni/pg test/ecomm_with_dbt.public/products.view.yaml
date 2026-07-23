@@ -1,0 +1,24 @@
+# Reference this view as ecomm_with_dbt_public__products
+catalog: ecomm_with_dbt
+schema: public
+table_name: products
+
+dimensions:
+  cost: {}
+  category: {}
+  name: {}
+  brand: {}
+  retail_price: {}
+  department: {}
+  sku: {}
+
+  id:
+    format: ID
+    primary_key: true
+
+  distribution_center_id:
+    format: ID
+
+measures:
+  count:
+    aggregate_type: count

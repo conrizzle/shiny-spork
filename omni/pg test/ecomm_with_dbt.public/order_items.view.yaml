@@ -1,0 +1,29 @@
+# Reference this view as ecomm_with_dbt_public__order_items
+catalog: ecomm_with_dbt
+schema: public
+table_name: order_items
+
+dimensions:
+  sale_price: {}
+  status: {}
+  created_at: {}
+  returned_at: {}
+  shipped_at: {}
+  delivered_at: {}
+
+  id:
+    format: ID
+    primary_key: true
+
+  order_id:
+    format: ID
+
+  user_id:
+    format: ID
+
+  inventory_item_id:
+    format: ID
+
+measures:
+  count:
+    aggregate_type: count

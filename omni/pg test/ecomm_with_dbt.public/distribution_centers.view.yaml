@@ -1,0 +1,17 @@
+# Reference this view as ecomm_with_dbt_public__distribution_centers
+catalog: ecomm_with_dbt
+schema: public
+table_name: distribution_centers
+
+dimensions:
+  name: {}
+  latitude: {}
+  longitude: {}
+
+  id:
+    format: ID
+    primary_key: true
+
+measures:
+  count:
+    aggregate_type: count
