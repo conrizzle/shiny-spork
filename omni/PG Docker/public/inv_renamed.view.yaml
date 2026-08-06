@@ -1,5 +1,6 @@
-# Reference this view as inventory_items
+# Reference this view as inv_renamed
 schema: public
+table_name: inventory_items
 
 dimensions:
   sold_at: {}
