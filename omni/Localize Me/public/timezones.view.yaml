@@ -1,0 +1,19 @@
+# Reference this view as timezones
+hidden: true
+
+schema: public
+
+dimensions:
+  a_timestamp: {}
+  a_timestamptz: {}
+  string_value: {}
+  timestamp_without_timezone: {}
+  timestamp_with_timezone: {}
+
+  id:
+    format: ID
+    primary_key: true
+
+measures:
+  count:
+    aggregate_type: count

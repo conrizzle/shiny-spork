@@ -1,0 +1,25 @@
+# Reference this view as users_with_recent_timestamps
+schema: public
+
+dimensions:
+  first_name: {}
+  last_name: {}
+  email: {}
+  age: {}
+  city: {}
+  state: {}
+  country: {}
+  zip: {}
+  latitude: {}
+  longitude: {}
+  gender: {}
+  traffic_source: {}
+  created_at: {}
+
+  id:
+    format: ID
+    primary_key: true
+
+measures:
+  count:
+    aggregate_type: count

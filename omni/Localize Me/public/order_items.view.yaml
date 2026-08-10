@@ -1,0 +1,21 @@
+# Reference this view as order_items
+description: order_items description shared
+
+schema: public
+
+dimensions:
+  quantity: {}
+
+  id:
+    format: ID
+    primary_key: true
+
+  order_id:
+    format: ID
+
+  inventory_item_id:
+    format: ID
+
+measures:
+  count:
+    aggregate_type: count
