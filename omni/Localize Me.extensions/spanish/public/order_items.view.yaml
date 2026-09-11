@@ -1,5 +1,6 @@
 # Reference this view as order_items
 label: Artículos del pedido
+# spanglish
 
 dimensions:
   quantity:

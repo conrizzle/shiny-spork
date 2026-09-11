@@ -3,7 +3,7 @@ label: Produits
 
 dimensions:
   category:
-    label: Catégorie
+    label: Catégorie more
 
   name:
     label: Nom

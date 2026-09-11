@@ -1,6 +1,7 @@
 # Reference this view as inventory_items
 schema: public
 
+# shared
 dimensions:
   created_at: {}
   sold_at: {}
