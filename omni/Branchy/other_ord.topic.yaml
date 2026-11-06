@@ -1,5 +1,5 @@
 base_view: orders
-label: Label Demo
+label: Label Demo Glob
 
 joins:
   users: {}
